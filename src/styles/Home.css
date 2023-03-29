@@ -1,0 +1,194 @@
+nav {
+  position: absolute;
+  display: flex;
+  width: 1918px;
+  height: 121px;
+  left: 1px;
+  top: 0px;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.16);
+  border-radius: 0px;
+  z-index: 10;
+}
+
+nav > .logo {
+  position: absolute;
+  width: 222.24px;
+  height: 25.1px;
+  left: 139.44px;
+  top: 50px;
+}
+
+.nav-links-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  width: 751px;
+  height: 30px;
+  left: 584px;
+  top: 45px;
+  font-family: "Nuckle";
+  font-style: normal;
+  font-weight: 539;
+  font-size: 25px;
+  line-height: 40px;
+  /* or 160% */
+  color: #000000;
+}
+
+.nav-login-btn {
+  /* Rectangle 4 */
+
+  box-sizing: border-box;
+  font-size: 22px;
+  font-weight: 591;
+  position: absolute;
+  width: 164px;
+  height: 59px;
+  left: 1403px;
+  top: 31px;
+
+  border: 2px solid #000000;
+  border-radius: 8px;
+}
+
+.nav-booknow-btn {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 196px;
+  height: 59px;
+  left: 1586px;
+  top: 31px;
+  background: #022a30;
+  font-size: 22px;
+  font-weight: 591;
+  color: white;
+
+  border: 2px solid #000000;
+  border-radius: 8px;
+}
+
+.home-section-1 {
+  position: absolute;
+  width: 1920px;
+  height: 940px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(
+    121.16deg,
+    #fcfcfc 18.31%,
+    #eaeff3 73.06%,
+    #d0e3f1 96.73%
+  );
+}
+
+.home-secition-1-right-container {
+  /* Rectangle 3 */
+
+  position: absolute;
+  width: 860px;
+  height: 940px;
+  left: 1060px;
+  top: 0px;
+
+  background: #02a5bf;
+  border-radius: 0px;
+  z-index: 9;
+}
+.home-section-1-h1 {
+  position: absolute;
+  width: 708px;
+  height: 240px;
+  left: 137px;
+  top: 309px;
+
+  font-family: "Nuckle";
+  font-style: normal;
+  font-weight: 653;
+  font-size: 60px;
+  line-height: 80px;
+  /* or 111% */
+  color: #000000;
+}
+
+.home-section-1-p {
+  /* We collect, clean & return at the location of your choice on time. */
+
+  position: absolute;
+  width: 708px;
+  height: 80px;
+  left: 137px;
+  top: 565px;
+
+  font-family: "Nuckle";
+  font-style: normal;
+  font-weight: 591;
+  font-size: 28px;
+  line-height: 40px;
+  /* or 143% */
+  text-transform: lowercase;
+
+  color: #000000;
+}
+
+.home-section1-download {
+  /* Download the App on */
+
+  position: absolute;
+  width: 298px;
+  height: 40px;
+  left: 137px;
+  top: 708px;
+
+  font-family: "Nuckle";
+  font-style: normal;
+  font-weight: 653;
+  font-size: 28px;
+  line-height: 40px;
+  /* identical to box height, or 143% */
+
+  color: #000000;
+}
+
+.applestore-btn {
+  /* app-store-btn 2 */
+
+  position: absolute;
+  width: 253px;
+  height: 77px;
+  left: 407px;
+  top: 762px;
+
+  background: url(app-store-btn.png);
+}
+
+.playstore-btn {
+  /* google-store-btn 2 */
+
+  position: absolute;
+  width: 254px;
+  height: 77px;
+  left: 137px;
+  top: 762px;
+
+  background: url(google-store-btn.png);
+}
+
+.home-section-1-right-box-1 {
+  /* Rectangle 23 */
+
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 256px;
+  height: 77px;
+  left: 1337px;
+  top: 278px;
+
+  background: #ffffff;
+  border: 2px solid #03444f;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 15px 15px 15px 0px;
+}
