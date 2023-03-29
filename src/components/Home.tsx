@@ -3,7 +3,7 @@ const Home = () => {
     <div className="flex w-[1920px]   min-h-screen mx-auto flex-col justify-between">
       {/* header */}
       <header>
-        <nav className="flex justify-between items-center  h-[121px] px-32 shadow-lg">
+        <nav className="flex relative justify-between items-center  h-[121px] px-32 shadow-md">
           {/* logo */}
           <svg
             width="223"
@@ -94,39 +94,149 @@ const Home = () => {
       {/* main */}
       <main className="grow">
         {/* section-1 */}
-        <section className="home-section-1">
+        <section className="flex h-[820px] bg-[#EAEFF3]">
           {/* left side */}
-          <div>
-            <div className="home-section-1-h1">
-              YOUR PROFESSIONAL DRY CLEAN & LAUNDRY SERVICE
+          <div className="grow flex flex-col gap-2 px-[137px] pt-[188px]">
+            <div className="w-[708px] h-[240px]  font-[653] leading-[80px] text-[72px] ">
+              Your professional dry clean & laundry service
             </div>
-            <p className="home-section-1-p">
+            <p className="font-[591] text-[28px]">
               We collect, clean & return at the location of your choice on time.
             </p>
-            <div className="home-section1-download">Download the App on</div>
-            <a href="">
-              <img
-                className="playstore-btn"
-                src="/images/google-store-btn 2.jpg"
-                alt="Play Store"
-              />
-            </a>
-            <a href="">
-              <img
-                className="applestore-btn"
-                src="/images/app-store-btn 2.png"
-                alt="Apple Store"
-              />
-            </a>
+            <div className="font-[653] text-[28px] mt-10">
+              Download the App on
+            </div>
+            <div className="flex gap-4 mt-2">
+              <a href="">
+                <img
+                  className="w-[254px] h-[77px]"
+                  src="/images/google-store-btn 2.jpg"
+                  alt="Play Store"
+                />
+              </a>
+              <a href="">
+                <img
+                  className="applestore-btn"
+                  src="/images/app-store-btn 2.png"
+                  alt="Apple Store"
+                />
+              </a>
+            </div>
           </div>
           {/* right side */}
-          <div className="home-secition-1-right-container">
-            <div className="home-section-1-right-box-1">
-              d Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-              esse nisi placeat ipsa ipsam. Reiciendis, placeat? Culpa, est quas
-              provident minima consequuntur ipsum ab consectetur, alias
-              dignissimos laborum nostrum esse! s
+          <div className="h-full w-[860px] bg-[#02A5BF]">
+            {/* top */}
+            <div className="relative top-[195px] left-[277px] w-[445px] h-[146px] bg-white border-2 border-[#03444f] shadow-hero-1 rounded-2xl">
+              <div className="absolute top-[-38px] left-[-2px] flex gap-4 justify-center items-center w-[256px] h-[77px] bg-white border-2 shadow-hero-1 border-[#03444f] special-radius">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="11.5213" cy="11.5213" r="11.5213" fill="black" />
+                </svg>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="11.5213" cy="11.5213" r="11.5213" fill="black" />
+                </svg>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="11.5213" cy="11.5213" r="11.5213" fill="black" />
+                </svg>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="11.5213" cy="11.5213" r="11.5213" fill="black" />
+                </svg>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="11.5213" cy="11.5213" r="11.5213" fill="black" />
+                </svg>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="11.5213" cy="11.5213" r="11.5213" fill="black" />
+                </svg>
+              </div>
+              <div className="flex flex-col mt-10 pl-6">
+                <p className="text-[16px] pb-1">Login</p>
+                <hr />
+                {/* lock and bars */}
+                <div className="flex gap-2 mt-4 justify-center items-center">
+                  <svg
+                    width="23"
+                    height="30"
+                    viewBox="0 0 23 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.75 10H18.375V7.25C18.375 3.455 15.295 0.375 11.5 0.375C7.705 0.375 4.625 3.455 4.625 7.25V10H3.25C1.73062 10 0.5 11.2306 0.5 12.75V26.5C0.5 28.0194 1.73062 29.25 3.25 29.25H19.75C21.2694 29.25 22.5 28.0194 22.5 26.5V12.75C22.5 11.2306 21.2694 10 19.75 10ZM11.5 22.375C9.98063 22.375 8.75 21.1444 8.75 19.625C8.75 18.1056 9.98063 16.875 11.5 16.875C13.0194 16.875 14.25 18.1056 14.25 19.625C14.25 21.1444 13.0194 22.375 11.5 22.375ZM15.7625 10H7.2375V7.25C7.2375 4.89875 9.14875 2.9875 11.5 2.9875C13.8512 2.9875 15.7625 4.89875 15.7625 7.25V10Z"
+                      fill="black"
+                    />
+                  </svg>
+                  <div className="flex flex-col gap-2">
+                    <svg
+                      width="357"
+                      height="11"
+                      viewBox="0 0 357 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        width="357"
+                        height="11"
+                        rx="5.5"
+                        fill="#DDDDDD"
+                        fill-opacity="0.49"
+                      />
+                    </svg>
+                    <svg
+                      width="262"
+                      height="11"
+                      viewBox="0 0 262 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        width="262"
+                        height="11"
+                        rx="5.5"
+                        fill="#DDDDDD"
+                        fill-opacity="0.49"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </div>
+            {/* bottom */}
+            <div></div>
           </div>
         </section>
       </main>
