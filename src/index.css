@@ -9,43 +9,22 @@
 @tailwind components;
 @tailwind utilities;
 
-.login-btn {
-  width: 164px;
-  height: 59px;
-  left: 1403px;
-  top: 31px;
+.btn-1 {
+  @apply btn font-medium bg-white text-black hover:bg-white;
   border: 2px solid #000000;
   border-radius: 8px;
-  font-weight: 591;
-  font-size: 22px;
-  line-height: 26px;
 }
 
-.booknow-btn {
-  width: 164px;
-  height: 59px;
-  left: 1403px;
-  top: 31px;
+.btn-2 {
+  @apply btn font-medium;
   color: white;
   background: #022a30;
   border: 2px solid #000000;
   border-radius: 8px;
-  font-weight: 591;
-  font-size: 22px;
-  line-height: 26px;
 }
 
-.skeleton-bar {
-  height: 11px;
-  width: 100%;
-  background: rgba(221, 221, 221, 0.49);
-  border-radius: 10px;
-}
-
-.black-dots {
-  width: 23.04px;
-  height: 23.04px;
-  background: #000000;
+.btn-2:hover {
+  background: #022a30;
 }
 
 .special-radius {
@@ -54,4 +33,13 @@
 
 .shadow-hero-1 {
   box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+}
+
+.section3gradient {
+  background: linear-gradient(
+    121.16deg,
+    #fcfcfc 18.31%,
+    #eaeff3 73.06%,
+    #d0e3f1 96.73%
+  );
 }
