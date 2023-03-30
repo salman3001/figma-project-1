@@ -43,3 +43,12 @@
     #d0e3f1 96.73%
   );
 }
+
+.section7-gradient {
+  background: linear-gradient(
+    -10.16deg,
+    #fcfcfc 18.31%,
+    #eaeff3 73.06%,
+    #d0e3f1 96.73%
+  );
+}
