@@ -1,0 +1,20 @@
+const Section4 = () => {
+  return (
+    <div className=" flex flex-col  gap-16 text-center p-24">
+      {/* text */}
+      <div className="flex flex-col justify-center items-center gap-4 ">
+        <h1 className="text-4xl font-bold">Our Work Process</h1>
+        <p className="w-96  ">
+          Mentioned below are our ever-growing list of services. All orders come
+          with free delivery
+        </p>
+      </div>
+      {/* svg */}
+      <div>
+        <img src="/images/section4arts.png" className="w-full h-auto" alt="" />
+      </div>
+    </div>
+  );
+};
+
+export default Section4;

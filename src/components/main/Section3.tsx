@@ -1,12 +1,52 @@
 const Section3 = () => {
   return (
-    <div className="w-full flex h-[940px] section3gradient">
-      <div className="w-1/2">ss</div>
-      <div className="w-1/2">
-        <img src="/images/section3arts.svg" alt="" />
+    <div className="relative w-full flex p-20 section3gradient">
+      <div className="relative w-1/2 flex  justify-center items-center">
+        <img src="/images/section3art.png" className="h-auto w-full" alt="" />
+      </div>
+      <div className="w-1/2 p-10 flex flex-col gap-4 justify-center ">
+        <h1 className="text-4xl font-bold text-[#545252]">
+          Ease to Made Laundry
+        </h1>
+        <p>Pick-up & Delivery At Your Door Step</p>
+        <div className="pt-4 flex flex-col gap-4">
+          <Icontexts
+            src="/images/globalhand.svg"
+            title="Quality Service"
+            description="Our experts inspect the clothes received then proceed for laundry or drycleaning service. We assure to maintain the quality without degrading the texture."
+          />
+          <Icontexts
+            src="/images/moneyhand.svg"
+            title="Cost-Effective"
+            description="Laundramoon provides the laundry services at an affordable costas compared to the market. Please check our price list."
+          />
+          <Icontexts
+            src="/images/deliverytruck.svg"
+            title="Free Collection and Delivery"
+            description="Laundramoon team will collect and deliver your cloth items quickly within your chosen time slot with minimum order £20."
+          />
+        </div>
       </div>
     </div>
   );
 };
 
 export default Section3;
+
+interface IIcontexts {
+  src: string;
+  title: string;
+  description: string;
+}
+
+const Icontexts = (prop: IIcontexts) => (
+  <div className="flex gap-4">
+    <div className="">
+      <img src={prop.src} width={80} alt="" />
+    </div>
+    <div className="">
+      <h3 className="font-bold ">{prop.title}</h3>
+      <p className="text-[#545252] pt-2">{prop.description}</p>
+    </div>
+  </div>
+);
