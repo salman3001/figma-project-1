@@ -8,6 +8,9 @@ const Welcome = () => {
       <Link to="/home" className="btn btn-link">
         Home
       </Link>
+      <Link to="/blog" className="btn btn-link">
+        Blog
+      </Link>
     </div>
   );
 };

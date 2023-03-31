@@ -1,18 +1,18 @@
 const Section7 = () => {
   return (
-    <div className="relative section7-gradient my-24 flex p-10">
+    <div className="relative section7-gradient md:my-24 flex justify-center md:justify-start items-center md:items-start gap-5 md:gap-0 flex-col md:flex-row p-10">
       {/* left */}
-      <div className="w-1/2 flex items-center justify-center">
+      <div className="w-1/2 h-96 flex items-center justify-center">
         <div className="absolute ">
           <img
             src="/images/section7art.png "
-            className="max-h-[600px]"
+            className="max-h-96 md:max-h-[600px]"
             alt=""
           />
         </div>
       </div>
       {/* right */}
-      <div className="flex flex-col gap-4 w-1/2">
+      <div className="flex flex-col gap-4 justify-center md:justify-start items-center md:items-start md:w-1/2">
         <h1 className="text-4xl font-bold">
           App For LaundraMoon With Laundry Services
         </h1>

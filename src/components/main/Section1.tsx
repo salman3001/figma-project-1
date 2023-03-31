@@ -1,8 +1,8 @@
 const Section1 = () => {
   return (
-    <section className="flex w-full h-[450px]  bg-[#EAEFF3]">
+    <section className=" flex flex-col md:flex-row min-h-[450px]  w-full   bg-[#EAEFF3]">
       {/* left side */}
-      <div className="flex   w-1/2 items-start pl-20 pr-40 pb-20 flex-col gap-2  pt-16">
+      <div className="flex  w-full md:w-1/2  items-start px-10 md:px-16 lg:px-32 pb-20 flex-col gap-2  pt-16">
         <div className="font-bold text-4xl ">
           Your professional dry clean & laundry service
         </div>
@@ -28,13 +28,13 @@ const Section1 = () => {
         </div>
       </div>
       {/* right side */}
-      <div className="h-full relative w-1/2  bg-[#02A5BF]">
+      <div className="min-h-[450px] relative w-full md:w-1/2  bg-[#02A5BF]">
         {/* top */}
-        <div className="absolute top-20 z-20 left-40">
+        <div className="absolute top-20 z-20 md:left-40 xs:left-[160px]">
           <img src="/images/section1-art1.svg" alt="" className="h-28" />
         </div>
         {/* bottom */}
-        <div className="absolute flex flex-col px-5 py-7 h-60 gap-2 w-96 top-32 z-10 left-[-50px] shadow-hero-1 border-2 border-[#03444F] rounded-2xl bg-white">
+        <div className="absolute flex flex-col px-5 py-7 h-60 gap-2 w-80 md:w-96 top-32 z-10 sm:left-[50px] md:left-[-50px] shadow-hero-1 border-2 border-[#03444F] rounded-2xl bg-white">
           <img
             src="/images/Launder-logo.svg"
             alt=""
@@ -61,7 +61,7 @@ const Section1 = () => {
           {/* leaves svg */}
         </div>
         {/* rectangel */}
-        <div className="absolute  w-80 h-60 top-[135px] left-6 border-2 border-[#03444F] rounded-2xl "></div>
+        <div className="absolute  w-80 h-60 top-[135px] md:left-6 sm:left-[124px] border-2 border-[#03444F] rounded-2xl "></div>
         <div className="absolute right-0 bottom-[-15px]">
           <img src="/images/leaves.svg" alt="" className="h-64" />
         </div>
@@ -71,7 +71,7 @@ const Section1 = () => {
           <img src="/images/stars.svg" alt="" />
         </div>
         {/* reviews */}
-        <div className="absolute flex text-white gap-2 font-[700] top-[747px] left-[74px] ">
+        <div className="hidden absolute md:flex text-white gap-2 font-[700] top-[747px] left-[74px] ">
           <div className="flex">
             <img src="/images/star.svg" alt="" />
             <img src="/images/star.svg" alt="" />
@@ -79,7 +79,7 @@ const Section1 = () => {
             <img src="/images/star.svg" alt="" />
             <img src="/images/star.svg" alt="" />
           </div>
-          <div>2000+ reviews - Trusted by 750,0000+ geniuses</div>
+          <div className="">2000+ reviews - Trusted by 750,0000+ geniuses</div>
         </div>
       </div>
     </section>

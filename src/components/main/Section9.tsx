@@ -1,9 +1,9 @@
-import { Card1 } from "../common/Card1";
-import Card2 from "../common/Card2";
+import { BlogCard1 } from "../common/BlogCard1";
+import BlogCard2 from "../common/BlogCard2";
 
 const Section9 = () => {
   return (
-    <div className="p-20 flex flex-col gap-16">
+    <div className="lg:p-20 px-10 flex flex-col gap-12">
       <div className="flex flex-col gap-4 justify-center items-center">
         <h1 className="text-4xl font-bold">Recent blog post</h1>
 
@@ -17,12 +17,13 @@ const Section9 = () => {
           See all <img src="/images/arrowblue.svg" alt="" className="h-5" />
         </a>
       </div>
-      <div className="w-full flex">
-        <div className="w-[60%]">
-          <Card1 />
+      <div className="w-full flex flex-col lg:flex-row gap-6">
+        <div className="lg:w-[60%]">
+          <BlogCard1 />
         </div>
-        <div className="w-[40%]">
-          <Card2 />
+        <div className="lg:w-[40%] flex flex-col gap-4 py-6 justify-between">
+          <BlogCard2 />
+          <BlogCard2 />
         </div>
       </div>
     </div>

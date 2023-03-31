@@ -5,7 +5,7 @@ const Section2 = () => {
         Over software businesses growing
       </h1>
       <div className="flex flex-wrap justify-center items-center gap-12">
-        <img src="/images/openzepline.svg" alt="" />
+        <img src="/images/openzepline.png" alt="" />
         <img src="/images/samsung.svg" alt="" />
         <img src="/images/monday.svg" alt="" />
         <img src="/images/segment.svg" alt="" />

@@ -1,12 +1,12 @@
 const Section6 = () => {
   return (
-    <div className="w-full p-20 flex flex-col gap-16 ">
+    <div className="w-full p-5 md:p-20 flex flex-col gap-8 md:gap-16 ">
       <div className="flex flex-col gap-4 justify-center items-center">
         <h1 className="text-4xl font-bold">Customers opinion</h1>
         <p className="text-[#545252]">Get a question? we're here to answer!</p>
       </div>
       <div className="overflow-scroll scrollbar-hide scroll-smooth snap-x scroll">
-        <div className="flex min-w-min  gap-24">
+        <div className="flex min-w-min gap-12 md:gap-24">
           <Card />
           <Card />
           <Card />

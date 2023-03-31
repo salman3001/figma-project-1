@@ -2,14 +2,14 @@ import React from "react";
 
 const Section8 = () => {
   return (
-    <div className="p-20 px10 sm:px-40  md:60 flex flex-col gap-16">
+    <div className="p-20 md:px-40 flex flex-col gap-4 md:gap-16">
       <div className="flex flex-col justify-center gap-2 items-center">
         <h1 className="text-4xl font-bold">Frequently Asked Questions</h1>
         <p className="text-xl text-[#141111] opacity-80">
           Get a question? we're here to answer!
         </p>
       </div>
-      <div className="pt-8">
+      <div className="md:pt-8">
         <CloseAccordian
           title="Where do you operate?"
           description="Yes, apart from dry cleaning and laundry services, we also offer alterations and repairs. You can check our services to know more. But kindly note these alteration and repairs require a minimum of 48 hours."

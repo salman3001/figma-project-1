@@ -1,17 +1,17 @@
 const Section3 = () => {
   return (
-    <div className="relative w-full flex p-20 section3gradient">
-      <div className="relative w-1/2 flex  justify-center items-center">
+    <div className="relative w-full flex flex-col md:flex-row justify-center md:justify-start items-center p-5 md:p-20  section3gradient">
+      <div className="relative md:w-1/2  flex  justify-center items-center">
         <img src="/images/section3art.png" className="h-auto w-full" alt="" />
       </div>
-      <div className="w-1/2 p-10 flex flex-col gap-4 justify-center ">
+      <div className="md:w-1/2 p-10 flex flex-col gap-4 justify-center ">
         <h1 className="text-4xl font-bold text-[#545252]">
           Ease to Made Laundry
         </h1>
         <p>Pick-up & Delivery At Your Door Step</p>
         <div className="pt-4 flex flex-col gap-4">
           <Icontexts
-            src="/images/globalhand.svg"
+            src="/images/moneyhand.svg"
             title="Quality Service"
             description="Our experts inspect the clothes received then proceed for laundry or drycleaning service. We assure to maintain the quality without degrading the texture."
           />
