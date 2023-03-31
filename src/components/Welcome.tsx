@@ -11,6 +11,9 @@ const Welcome = () => {
       <Link to="/blog" className="btn btn-link">
         Blog
       </Link>
+      <Link to="/blogdetail" className="btn btn-link">
+        Blog Detail
+      </Link>
     </div>
   );
 };

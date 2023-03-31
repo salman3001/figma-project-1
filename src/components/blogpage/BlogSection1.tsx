@@ -1,4 +1,5 @@
 import EmailSubscribe from "../common/EmailSubscribe";
+import SocialIconsWhite from "../common/SocialIconsWhite";
 
 const BlogSection1 = () => {
   return (
@@ -10,6 +11,9 @@ const BlogSection1 = () => {
           with free delivery
         </p>
         <EmailSubscribe />
+        <div className="">
+          <SocialIconsWhite />
+        </div>
       </div>
     </section>
   );
