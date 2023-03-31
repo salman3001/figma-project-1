@@ -2,7 +2,7 @@ const EmailSubscribe = () => {
   return (
     <div className="flex justify-center ">
       <input
-        className="rounded-l-lg p-2 border w-56 sm:w-60 md:w-96 border-[#03444F] "
+        className="rounded-l-lg p-2 border text-black w-56 sm:w-60 md:w-96 border-[#03444F] "
         type="email"
         placeholder="Enter email"
         name="email"

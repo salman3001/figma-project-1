@@ -43,6 +43,12 @@
     background: white;
   }
 
+  .btn-4 {
+    @apply font-medium rounded-2xl  h-7 w-24 border border-[#03444F];
+    color: #03444f;
+    background: white;
+  }
+
   .special-radius {
     border-radius: 15px 15px 15px 0px;
   }

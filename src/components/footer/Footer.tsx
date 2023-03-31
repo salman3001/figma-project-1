@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 const Footer = () => {
   return (
-    <footer className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5  gap-8 md:gap-16  p-10 md:p-20">
+    <footer className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5  gap-8 md:gap-16  px-10 md:px-20 py-5">
       <List>
         <div className="flex flex-col gap-4">
           <img
