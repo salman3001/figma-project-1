@@ -4,11 +4,11 @@ const BlogCard2 = () => {
       <div>
         <img
           src="/images/card2-img2.png"
-          className=" h-auto rounded-2xl"
+          className="h-auto rounded-2xl"
           alt=""
         />
       </div>
-      <div className="flex flex-col gap-2 w-1/2">
+      <div className="flex flex-col gap-2 md:w-1/2">
         <h1 className="text-2xl font-bold leading-6">
           Lorem Ipsum is simply dummy text of the
         </h1>

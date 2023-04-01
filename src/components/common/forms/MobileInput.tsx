@@ -1,7 +1,7 @@
 const MobileInput = (prop: { placeholder: string; name: string }) => {
   return (
     <div className="flex">
-      <select className="w-[15%]">
+      <select className="w-[30%]">
         <option value="+1" className="flex justify-center text-center">
           +1
         </option>

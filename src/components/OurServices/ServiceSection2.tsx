@@ -1,19 +1,19 @@
 const ServiceSection2 = () => {
   return (
     <div className="grid lg:grid-cols-2 gap-y-16 gap-x-8 p-10 md:p-20">
-      <h1 className="text-5xl font-bold">
+      <h1 className="text-4xl md:text-5xl font-bold">
         YOUR PROFESSIONAL DRY CLEAN & LAUNDRY SERVICE
       </h1>
       <Card />
-      <h1 className="text-5xl font-bold">Laundry Service</h1>
+      <h1 className="text-4xl md:text-5xl font-bold">Laundry Service</h1>
       <Card />
-      <h1 className="text-5xl font-bold">Dry Cleaning</h1>
+      <h1 className="text-4xl md:text-5xl font-bold">Dry Cleaning</h1>
       <Card />
-      <h1 className="text-5xl font-bold">Home & Bedding</h1>
+      <h1 className="text-4xl md:text-5xl font-bold">Home & Bedding</h1>
       <Card />
-      <h1 className="text-5xl font-bold">Alterations & Repairs</h1>
+      <h1 className="text-4xl md:text-5xl font-bold">Alterations & Repairs</h1>
       <Card />
-      <h1 className="text-5xl font-bold">Ironing</h1>
+      <h1 className="text-4xl md:text-5xl font-bold">Ironing</h1>
       <Card />
     </div>
   );

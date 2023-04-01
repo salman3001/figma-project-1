@@ -10,12 +10,12 @@ const Faqs = () => {
         <NavBar />
       </header>
       <main className="grow">
-        <div className="grid lg:grid-cols-2 text-xl py-10 pl-10 pr-10 lg:pr-0 md:pl-20">
+        <div className="grid lg:grid-cols-2 text-xl py-4 md:py-10 pl-10 pr-10 lg:pr-0 md:pl-20">
           <div className="flex flex-col gap-4">
-            <h1 className="text-7xl py-10 font-bold">
+            <h1 className="text-4xl md:text-7xl py-10 font-bold">
               Frequently asked questions
             </h1>
-            <ul className="text-3xl flex flex-col gap-7 opacity-80">
+            <ul className="text-2xl md:text-3xl flex flex-col gap-7 opacity-80">
               <li className="flex gap-6 items-center font-bold">
                 <img src="/images/ring.svg" className="h-4" alt="" />
                 General Information

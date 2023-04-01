@@ -13,7 +13,7 @@ const Contactus = () => {
         <NavBar />
       </header>
       <main className="grow">
-        <div className="flex flex-col gap-6 lg:flex-row w-full p-10 lg:p-20">
+        <div className="flex flex-col gap-6 lg:flex-row w-full p-5 lg:p-20">
           {/* left */}
           <div className="lg:w-1/2 flex px-5 lg:px-10 flex-col gap-4">
             <h1 className="text-2xl md:text-6xl">
@@ -45,7 +45,7 @@ const Contactus = () => {
             </div>
           </div>
           {/* right */}
-          <div className="lg:w-1/2 shadow-xl p-10 flex flex-col gap-4 rounded-3xl">
+          <div className="lg:w-1/2 shadow-xl p-4 md:p-10 flex flex-col gap-4 rounded-3xl">
             <div className="grid md:grid-cols-2 gap-4">
               <div className="flex flex-col gap-2">
                 <Label titile="Name" for="name" />

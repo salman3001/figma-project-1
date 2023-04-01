@@ -1,7 +1,7 @@
 export const OurServiceSection5 = () => {
   return (
     <div className=" flex flex-col gap-4 justify-center md:justify-start p-5 md:p-20 md:pb-10  w-full text-white">
-      <div className="bg-[#03444F] flex flex-col gap-2 rounded-2xl p-10 md:p-20">
+      <div className="bg-[#03444F] flex flex-col gap-2 rounded-2xl py-10 px-5 md:p-20">
         <div className=" text-4xl font-bold">Ease to Made Laundry</div>
         <div>
           <div className="md:w-1/2 text-[#EBEBEB] opacity-90">
@@ -77,7 +77,7 @@ interface IArrowButton {
 
 const ArrowButton = (prop: IArrowButton) => (
   <button
-    className={`rounded-full h-12 w-12 p-2 bg-white ${
+    className={`rounded-full h-8 md:h-12 w-8 md:w-12 p-2 bg-white ${
       prop.direction === "left" && "rotate-180"
     }`}
   >
@@ -86,7 +86,7 @@ const ArrowButton = (prop: IArrowButton) => (
 );
 const Button = (prop: IButton) => (
   <button
-    className={`border px-12 py-2 rounded-full ${
+    className={`border px-6 md:px-12 py-1 md:py-2 rounded-full ${
       prop.active ? "bg-white text-[#00A5BF]" : "bg-[#7FA0A5]"
     }`}
   >

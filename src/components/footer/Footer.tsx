@@ -125,7 +125,7 @@ const Footer = () => {
           Hayes
         </a>
       </List>
-      <div className="flex justify-between w-full col-span-2 md:col-span-3 lg:col-span-5 text-[#504F4] opacity-60">
+      <div className="flex justify-between w-full col-span-2 md:col-span-3 lg:col-span-5 text-[#504F4] ">
         <div>copyright © 2023 Laundramoon All rights reserved.</div>
         <div className="flex gap-2 pr-10">
           <a href="">

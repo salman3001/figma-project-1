@@ -10,7 +10,7 @@ const Section10 = () => {
             <button className="btn-3"> Place Order</button>
           </div>
         </div>
-        <div className="md:w-[70%] flex flex-col gap-10 justify-between lg:gap-20  pr-10">
+        <div className="md:w-[70%] flex flex-col gap-10 justify-between lg:gap-20  md:pr-10">
           <p className="opacity-80">
             From contactless pickups to expert cleaning and quick deliveries,
             Laundramoon takes all safety measures and industry best practices
@@ -29,13 +29,13 @@ const Section10 = () => {
             <div>
               <img
                 src="/images/card2-img2.png "
-                className="max-w-full h-auto"
+                className="max-w-full hidden md:visible h-auto"
                 alt=""
               />
             </div>
             <div>
               <img
-                className="max-w-full h-auto"
+                className="max-w-full hidden md:visible h-auto"
                 src="/images/card2-img2.png"
                 alt=""
               />

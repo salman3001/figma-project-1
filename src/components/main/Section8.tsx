@@ -2,7 +2,7 @@ import React from "react";
 
 const Section8 = () => {
   return (
-    <div className="p-10 sm:p-10  xl:px-40 flex flex-col gap-4 md:gap-16">
+    <div className="py-10 sm:p-10  xl:px-40 flex flex-col gap-4 md:gap-16">
       <div className="flex flex-col justify-center gap-2 items-center">
         <h1 className="text-4xl font-bold">Frequently Asked Questions</h1>
         <p className="text-xl text-[#141111] opacity-80">
