@@ -78,4 +78,13 @@
   .card-btn {
     @apply btn border-2 bg-transparent border-[#03444F] text-[#03444F]  hover:bg-transparent   rounded-full w-24 btn-sm;
   }
+
+  .about-section3-gradient {
+    background: linear-gradient(
+      121.16deg,
+      #fcfcfc 18.31%,
+      #eaeff3 73.06%,
+      #d0e3f1 96.73%
+    );
+  }
 }

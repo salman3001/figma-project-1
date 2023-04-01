@@ -1,8 +1,6 @@
-import React from "react";
-
-const Section8 = () => {
+const OurServiceSection6 = () => {
   return (
-    <div className="p-10 sm:p-10  xl:px-40 flex flex-col gap-4 md:gap-16">
+    <div className="p-10 sm:p-20  md:px-40 flex flex-col gap-4 md:gap-16 about-section3-gradient">
       <div className="flex flex-col justify-center gap-2 items-center">
         <h1 className="text-4xl font-bold">Frequently Asked Questions</h1>
         <p className="text-xl text-[#141111] opacity-80">
@@ -35,7 +33,7 @@ const Section8 = () => {
   );
 };
 
-export default Section8;
+export default OurServiceSection6;
 
 interface Iaccordian {
   title: string;

@@ -20,6 +20,21 @@ const Welcome = () => {
       <Link to="/aboutus" className="btn btn-link">
         About us
       </Link>
+      <Link to="/services" className="btn btn-link">
+        Services
+      </Link>
+      <Link to="/faqs" className="btn btn-link">
+        FAQs
+      </Link>
+      <Link to="/ourservices" className="btn btn-link">
+        Our Services
+      </Link>
+      <Link to="/location" className="btn btn-link">
+        Location
+      </Link>
+      <Link to="/privacy" className="btn btn-link">
+        Privacy
+      </Link>
     </div>
   );
 };
