@@ -21,22 +21,22 @@ const Section10 = () => {
           <div className="flex gap-8">
             <div>
               <img
-                src="/images/card2-img2.png"
+                src={import.meta.env.VITE_BASE_URL + "/images/card2-img2.png"}
                 className="max-w-full h-auto"
                 alt=""
               />
             </div>
             <div>
               <img
-                src="/images/card2-img2.png "
-                className="max-w-full hidden md:visible h-auto"
+                src={import.meta.env.VITE_BASE_URL + "/images/card2-img2.png "}
+                className="max-w-full hidden md:block h-auto"
                 alt=""
               />
             </div>
             <div>
               <img
-                className="max-w-full hidden md:visible h-auto"
-                src="/images/card2-img2.png"
+                className="max-w-full hidden md:block h-auto"
+                src={import.meta.env.VITE_BASE_URL + "/images/card2-img2.png"}
                 alt=""
               />
             </div>

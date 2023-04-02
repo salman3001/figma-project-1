@@ -11,7 +11,11 @@ const Section4 = () => {
       </div>
       {/* svg */}
       <div>
-        <img src="images/section4arts.png" className="w-full h-auto" alt="" />
+        <img
+          src={import.meta.env.VITE_BASE_URL + "/images/section4arts.png"}
+          className="w-full h-auto"
+          alt=""
+        />
       </div>
     </div>
   );

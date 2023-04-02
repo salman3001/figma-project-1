@@ -17,23 +17,43 @@ const Faqs = () => {
             </h1>
             <ul className="text-2xl md:text-3xl flex flex-col gap-7 opacity-80">
               <li className="flex gap-6 items-center font-bold">
-                <img src="/images/ring.svg" className="h-4" alt="" />
+                <img
+                  src={import.meta.env.VITE_BASE_URL + "/images/ring.svg"}
+                  className="h-4"
+                  alt=""
+                />
                 General Information
               </li>
               <li className="flex gap-6 items-center">
-                <img src="/images/ring.svg" className="h-4" alt="" />
+                <img
+                  src={import.meta.env.VITE_BASE_URL + "/images/ring.svg"}
+                  className="h-4"
+                  alt=""
+                />
                 Our Services
               </li>
               <li className="flex gap-6 items-center">
-                <img src="/images/ring.svg" className="h-4" alt="" />
+                <img
+                  src={import.meta.env.VITE_BASE_URL + "/images/ring.svg"}
+                  className="h-4"
+                  alt=""
+                />
                 Collection & Delivery
               </li>
               <li className="flex gap-6 items-center">
-                <img src="/images/ring.svg" className="h-4" alt="" />
+                <img
+                  src={import.meta.env.VITE_BASE_URL + "/images/ring.svg"}
+                  className="h-4"
+                  alt=""
+                />
                 Pricing & Payments
               </li>
               <li className="flex gap-6 items-center">
-                <img src="/images/ring.svg" className="h-4" alt="" />
+                <img
+                  src={import.meta.env.VITE_BASE_URL + "/images/ring.svg"}
+                  className="h-4"
+                  alt=""
+                />
                 Rescheduling, Cancellations, & Complaints
               </li>
             </ul>

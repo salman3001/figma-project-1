@@ -4,10 +4,9 @@ import Section10 from "../main/Section10";
 import Section4 from "../main/Section4";
 import Section6 from "../main/Section6";
 import NavBar from "../navbar/NavBar";
-import OurServiceSection2 from "./OurServiceSection2";
+
 import OurServiceSection2reverse from "./OurServiceSection2reverse";
-import OurServiceSection4 from "./OurServiceSection4";
-import { OurServiceSection5 } from "./OurServiceSection5";
+
 import OurServiceSection6 from "./OurServiceSection6";
 import ServiceSection2 from "./ServiceSection2";
 

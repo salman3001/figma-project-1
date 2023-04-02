@@ -5,7 +5,7 @@ const Section7 = () => {
       <div className="w-1/2 h-96 flex items-center justify-center">
         <div className="absolute ">
           <img
-            src="/images/section7art.png "
+            src={import.meta.env.VITE_BASE_URL + "/images/section7art.png "}
             className="max-h-96 md:max-h-[600px]"
             alt=""
           />
@@ -35,13 +35,22 @@ const Section7 = () => {
           <div className="flex gap-4">
             <a href="">
               <img
-                src="/images/google-store-btn 2.jpg"
+                src={
+                  import.meta.env.VITE_BASE_URL +
+                  "/images/google-store-btn 2.jpg"
+                }
                 className="h-16"
                 alt=""
               />
             </a>
             <a href="">
-              <img src="/images/app-store-btn 2.png" className="h-16" alt="" />
+              <img
+                src={
+                  import.meta.env.VITE_BASE_URL + "/images/app-store-btn 2.png"
+                }
+                className="h-16"
+                alt=""
+              />
             </a>
           </div>
         </div>
@@ -54,7 +63,10 @@ export default Section7;
 
 const SiteInduction = () => (
   <div className="flex justify-center items-center">
-    <img src="/images/section7check.svg" alt="" />
+    <img
+      src={import.meta.env.VITE_BASE_URL + "/images/section7check.svg"}
+      alt=""
+    />
     <p className="font-semibold"> Site Inductions</p>
   </div>
 );

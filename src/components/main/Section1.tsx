@@ -13,14 +13,18 @@ const Section1 = () => {
         <div className="flex gap-4 mt-2">
           <a href="">
             <img
-              src="/images/google-store-btn 2.jpg"
+              src={
+                import.meta.env.VITE_BASE_URL + "/images/google-store-btn 2.jpg"
+              }
               className="h-14 w-48"
               alt="Play Store"
             />
           </a>
           <a href="">
             <img
-              src="/images/app-store-btn 2.png"
+              src={
+                import.meta.env.VITE_BASE_URL + "/images/app-store-btn 2.png"
+              }
               className="h-14 w-48"
               alt="Apple Store"
             />
@@ -31,12 +35,16 @@ const Section1 = () => {
       <div className="min-h-[450px] relative w-full md:w-1/2  bg-[#02A5BF]">
         {/* top */}
         <div className="absolute top-20 z-20 md:left-40 xs:left-[160px]">
-          <img src="/images/section1-art1.svg" alt="" className="h-28" />
+          <img
+            src={import.meta.env.VITE_BASE_URL + "/images/section1-art1.svg"}
+            alt=""
+            className="h-28"
+          />
         </div>
         {/* bottom */}
         <div className="absolute flex flex-col px-5 py-7 h-60 gap-2 w-80 md:w-96 top-32 z-10 sm:left-[50px] md:left-[-50px] shadow-hero-1 border-2 border-[#03444F] rounded-2xl bg-white">
           <img
-            src="/images/Launder-logo.svg"
+            src={import.meta.env.VITE_BASE_URL + "/images/Launder-logo.svg"}
             alt=""
             className="h-3 self-start"
           />
@@ -45,7 +53,10 @@ const Section1 = () => {
             <div className="text-4xl flex  gap-2">
               <div className="">E10 7DA</div>
               <div className="">
-                <img src="/images/editicon.svg" alt="" />
+                <img
+                  src={import.meta.env.VITE_BASE_URL + "/images/editicon.svg"}
+                  alt=""
+                />
               </div>
             </div>
             <div className="pl-2 font-semibold">Enter Zipcode</div>
@@ -55,7 +66,11 @@ const Section1 = () => {
           <div className="absolute flex flex-col gap-1 p-1 w-72 h-16  bg-white top-56 shadow-hero-1 border-[#03444F] border-2 rounded-2xl">
             <div className=" text-black font-semibold">Quantity</div>
             <div>
-              <img src="/images/slider.svg" alt="" className="" />
+              <img
+                src={import.meta.env.VITE_BASE_URL + "/images/slider.svg"}
+                alt=""
+                className=""
+              />
             </div>
           </div>
           {/* leaves svg */}
@@ -63,21 +78,43 @@ const Section1 = () => {
         {/* rectangel */}
         <div className="absolute  w-80 h-60 top-[135px] md:left-6 sm:left-[124px] border-2 border-[#03444F] rounded-2xl "></div>
         <div className="absolute right-0 bottom-[-15px]">
-          <img src="/images/leaves.svg" alt="" className="h-64" />
+          <img
+            src={import.meta.env.VITE_BASE_URL + "/images/leaves.svg"}
+            alt=""
+            className="h-64"
+          />
         </div>
 
         {/* stars */}
         <div className="absolute top-[121px]">
-          <img src="/images/stars.svg" alt="" />
+          <img
+            src={import.meta.env.VITE_BASE_URL + "/images/stars.svg"}
+            alt=""
+          />
         </div>
         {/* reviews */}
         <div className="hidden absolute md:flex text-white gap-2 font-[700] top-[747px] left-[74px] ">
           <div className="flex">
-            <img src="/images/star.svg" alt="" />
-            <img src="/images/star.svg" alt="" />
-            <img src="/images/star.svg" alt="" />
-            <img src="/images/star.svg" alt="" />
-            <img src="/images/star.svg" alt="" />
+            <img
+              src={import.meta.env.VITE_BASE_URL + "/images/star.svg"}
+              alt=""
+            />
+            <img
+              src={import.meta.env.VITE_BASE_URL + "/images/star.svg"}
+              alt=""
+            />
+            <img
+              src={import.meta.env.VITE_BASE_URL + "/images/star.svg"}
+              alt=""
+            />
+            <img
+              src={import.meta.env.VITE_BASE_URL + "/images/star.svg"}
+              alt=""
+            />
+            <img
+              src={import.meta.env.VITE_BASE_URL + "/images/star.svg"}
+              alt=""
+            />
           </div>
           <div className="">2000+ reviews - Trusted by 750,0000+ geniuses</div>
         </div>

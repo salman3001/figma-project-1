@@ -10,7 +10,11 @@ export const Section5 = () => {
           </div>
           <div className="flex gap-2 items-center justify-end hover:underline">
             <a href="">View More</a>
-            <img src="/images/arrow.svg" alt="" className="h-3" />
+            <img
+              src={import.meta.env.VITE_BASE_URL + "/images/arrow.svg"}
+              alt=""
+              className="h-3"
+            />
           </div>
         </div>
         <div className="flex gap-4 ">

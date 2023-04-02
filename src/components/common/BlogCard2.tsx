@@ -3,7 +3,7 @@ const BlogCard2 = () => {
     <div className="flex flex-col justify-center md:justify-start items-center md:items-start w-full md:flex-row gap-4 ">
       <div>
         <img
-          src="/images/card2-img2.png"
+          src={import.meta.env.VITE_BASE_URL + "/images/card2-img2.png"}
           className="h-auto rounded-2xl"
           alt=""
         />

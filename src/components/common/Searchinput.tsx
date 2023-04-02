@@ -9,7 +9,10 @@ const Searchinput = () => {
         placeholder="Search blogs"
       />
       <button className="absolute top-4 right-2">
-        <img src="/images/search-icon.svg" alt="" />
+        <img
+          src={import.meta.env.VITE_BASE_URL + "/images/search-icon.svg"}
+          alt=""
+        />
       </button>
     </div>
   );

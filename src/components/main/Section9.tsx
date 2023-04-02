@@ -14,7 +14,12 @@ const Section9 = () => {
           href=""
           className="flex hover:underline gap-2 self-end  items-center text-2xl text-[#00A5BF]"
         >
-          See all <img src="/images/arrowblue.svg" alt="" className="h-5" />
+          See all{" "}
+          <img
+            src={import.meta.env.VITE_BASE_URL + "/images/arrowblue.svg"}
+            alt=""
+            className="h-5"
+          />
         </a>
       </div>
       <div className="w-full flex flex-col lg:flex-row gap-6">

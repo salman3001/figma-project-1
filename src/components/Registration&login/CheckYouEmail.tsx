@@ -5,13 +5,23 @@ const CheckYouEmail = () => {
     <main className="grid container mx-auto lg:grid-cols-2 min-h-screen max-w-screen  ">
       <div className="bg-[#00A5BF] relative flex text-white flex-col justify-between  items-center">
         <h1 className="w-full p-6 border-b border-white border-opacity-20">
-          <img src="/images/launder-logo-white.svg" className="h-4 " alt="" />
+          <img
+            src={
+              import.meta.env.VITE_BASE_URL + "/images/launder-logo-white.svg"
+            }
+            className="h-4 "
+            alt=""
+          />
         </h1>
         <div className="flex pt-8 flex-col items-center">
           <h1 className="text-4xl">Welcome back!</h1>
           <p className="opacity-80">See the latest system update on our blog</p>
         </div>
-        <img src="/images/Signupart.png" alt="" className="self-start" />
+        <img
+          src={import.meta.env.VITE_BASE_URL + "/images/Signupart.png"}
+          alt=""
+          className="self-start"
+        />
       </div>
       <div className="bg-white px-32">
         <h1 className="w-full p-5 border-b text-end border-gray-300 border-opacity-20">
@@ -24,7 +34,12 @@ const CheckYouEmail = () => {
         </h1>
         <div className="flex flex-col justify-center items-center text-center gap-16 h-[90%]">
           <div className="">
-            <img src="/images/email-circle-icon.png" alt="" />
+            <img
+              src={
+                import.meta.env.VITE_BASE_URL + "/images/email-circle-icon.png"
+              }
+              alt=""
+            />
           </div>
           <div className="max-w-md">
             <h1 className="text-2xl font-bold">Check Your Email</h1>
@@ -41,7 +56,9 @@ const CheckYouEmail = () => {
               </a>
             </div>
             <img
-              src="/images/check-circle-icon.png"
+              src={
+                import.meta.env.VITE_BASE_URL + "/images/check-circle-icon.png"
+              }
               className="place-self-end self-center"
               alt=""
             />

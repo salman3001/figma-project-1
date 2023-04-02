@@ -16,22 +16,46 @@ const Section6 = () => {
       </div>
       <div className="flex gap-2 justify-center">
         <button>
-          <img src="/images/blackdot.svg" className="h-4" alt="" />
+          <img
+            src={import.meta.env.VITE_BASE_URL + "/images/blackdot.svg"}
+            className="h-4"
+            alt=""
+          />
         </button>
         <button>
-          <img src="/images/blackdot.svg" className="h-2 opacity-50" alt="" />
+          <img
+            src={import.meta.env.VITE_BASE_URL + "/images/blackdot.svg"}
+            className="h-2 opacity-50"
+            alt=""
+          />
         </button>
         <button>
-          <img src="/images/blackdot.svg" className="h-2 opacity-50" alt="" />
+          <img
+            src={import.meta.env.VITE_BASE_URL + "/images/blackdot.svg"}
+            className="h-2 opacity-50"
+            alt=""
+          />
         </button>
         <button>
-          <img src="/images/blackdot.svg" className="h-2 opacity-50" alt="" />
+          <img
+            src={import.meta.env.VITE_BASE_URL + "/images/blackdot.svg"}
+            className="h-2 opacity-50"
+            alt=""
+          />
         </button>
         <button>
-          <img src="/images/blackdot.svg" className="h-2 opacity-50" alt="" />
+          <img
+            src={import.meta.env.VITE_BASE_URL + "/images/blackdot.svg"}
+            className="h-2 opacity-50"
+            alt=""
+          />
         </button>
         <button>
-          <img src="/images/blackdot.svg" className="h-2 opacity-50" alt="" />
+          <img
+            src={import.meta.env.VITE_BASE_URL + "/images/blackdot.svg"}
+            className="h-2 opacity-50"
+            alt=""
+          />
         </button>
       </div>
       <div className="flex flex-col gap-4 justify-center items-center">
@@ -53,7 +77,11 @@ export default Section6;
 
 const Card = () => (
   <div className="bg-[#F5F7F9] snap-center  w-[500px] p-8 rounded-2xl h-72 flex flex-col justify-between gap-2">
-    <img src="/images/bluestars.svg" className="h-4 self-start " alt="" />
+    <img
+      src={import.meta.env.VITE_BASE_URL + "/images/bluestars.svg"}
+      className="h-4 self-start "
+      alt=""
+    />
     <div className="grow pt-4">
       <h1 className="text-xl font-bold">Great design and support</h1>
       <p className="text-[#8CA0A4] ">

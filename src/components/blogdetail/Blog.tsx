@@ -20,7 +20,10 @@ const Blog = () => {
           <SocialIcons color1="#00A5BF" color2="white" />
         </div>
       </div>
-      <img src="/images/Blog-photo.png" alt="" />
+      <img
+        src={import.meta.env.VITE_BASE_URL + "/images/Blog-photo.png"}
+        alt=""
+      />
       <h1 className="text-xl md:text-3xl font-semibold py-4">
         Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in
         45 BC written by Cicero in 45 BC

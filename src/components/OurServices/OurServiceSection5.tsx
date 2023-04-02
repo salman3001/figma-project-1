@@ -10,7 +10,11 @@ export const OurServiceSection5 = () => {
           </div>
           <div className="flex gap-2 items-center justify-end hover:underline">
             <a href="">View More</a>
-            <img src="/images/arrow.svg" alt="" className="h-3" />
+            <img
+              src={import.meta.env.VITE_BASE_URL + "/images/arrow.svg"}
+              alt=""
+              className="h-3"
+            />
           </div>
         </div>
         <div className="flex gap-4 ">
@@ -54,14 +58,20 @@ export const OurServiceSection5 = () => {
 
 const CardWhite = (prop: { title: string }) => (
   <div className="flex flex-col gap-1">
-    <img src="/images/section5art1.svg" alt="" />
+    <img
+      src={import.meta.env.VITE_BASE_URL + "/images/section5art1.svg"}
+      alt=""
+    />
     <p className="font-bold">{prop.title}</p>
   </div>
 );
 
 const Cardblue = (prop: { title: string }) => (
   <div className="flex flex-col gap-1">
-    <img src="/images/section5art2.svg" alt="" />
+    <img
+      src={import.meta.env.VITE_BASE_URL + "/images/section5art2.svg"}
+      alt=""
+    />
     <p className="font-bold">{prop.title}</p>
   </div>
 );
@@ -81,7 +91,11 @@ const ArrowButton = (prop: IArrowButton) => (
       prop.direction === "left" && "rotate-180"
     }`}
   >
-    <img src="/images/arrowblue.svg" className="h-4" alt="" />
+    <img
+      src={import.meta.env.VITE_BASE_URL + "/images/arrowblue.svg"}
+      className="h-4"
+      alt=""
+    />
   </button>
 );
 const Button = (prop: IButton) => (
@@ -102,7 +116,11 @@ interface ICard {
 const Card = (prop: ICard) => (
   <div className="flex flex-col w-32 ">
     <div className="bg-white rounded-t-lg flex justify-center items-center p-4 text-black flex-col gap-1">
-      <img src="/images/shirt.svg" className="h-12" alt="" />
+      <img
+        src={import.meta.env.VITE_BASE_URL + "/images/shirt.svg"}
+        className="h-12"
+        alt=""
+      />
       {prop.qty} shirts
     </div>
     <div className="bg-[#00A5BF] p-2 flex justify-center items-center rounded-b-lg h-[20%]">

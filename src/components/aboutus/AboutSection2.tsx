@@ -4,7 +4,10 @@ const AboutSection2 = () => {
   return (
     <div className="p-10  flex justify-center relative text-white md:p-20 bg-[#03444F] mt-20 md:mt-40 lg:mt-64">
       <div className="absolute w-[90%] top-[-70px] md:top-[-100px] lg:top-[-150px] xl:top-[-200px]">
-        <img src="/images/aboutsection2-img.png" alt="" />
+        <img
+          src={import.meta.env.VITE_BASE_URL + "/images/aboutsection2-img.png"}
+          alt=""
+        />
       </div>
       <div className="grid md:grid-cols-2 pt-[100px] xs-pt-[100px] sm:pt-[200px]  lg:pt-[200px] xl:pt-[350px] xx gap-6 justify-items-center [&>p]:opacity-80">
         <h1 className="text-4xl md:col-span-2  font-bold max-w-xl text-center">

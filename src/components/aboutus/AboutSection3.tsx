@@ -48,7 +48,10 @@ const AboutSection3 = () => {
         </p>
       </div>
       <div className="z-10">
-        <img src="/images/young-woman.png" alt="" />
+        <img
+          src={import.meta.env.VITE_BASE_URL + "/images/young-woman.png"}
+          alt=""
+        />
       </div>
       <div className="flex relative">
         <div className="absolute md:px-20 pb-0 top-[-100px]  ">

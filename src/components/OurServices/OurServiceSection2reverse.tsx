@@ -1,6 +1,3 @@
-import React from "react";
-import CheckSvg from "../common/CheckSvg";
-
 const OurServiceSection2reverse = () => {
   return (
     <div className="p-10 lg:p-20 lg:h-[700px] flex-col gap-0 items-center  flex  relative text-white md:px-20 bg-[#03444F] lg:mb-[400px]">
@@ -18,13 +15,16 @@ const OurServiceSection2reverse = () => {
           </p>
         </div>
         <img
-          src="/images/stamp.png"
+          src={import.meta.env.VITE_BASE_URL + "/images/stamp.png"}
           className="w-40 self-center place-self-end h-auto"
           alt=""
         />
       </div>
       <div className="lg:absolute lg:bottom-[-400px] py-5 lg:p-20 ">
-        <img src="/images/aboutsection2-img.png" alt="" />
+        <img
+          src={import.meta.env.VITE_BASE_URL + "/images/aboutsection2-img.png"}
+          alt=""
+        />
       </div>
     </div>
   );

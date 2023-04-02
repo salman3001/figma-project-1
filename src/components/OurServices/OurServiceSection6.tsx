@@ -46,12 +46,16 @@ const OpenAccordian = (prop: Iaccordian) => (
       <p className="font-bold text-lg hover:cursor-pointer">{prop.title}</p>
       <i>
         <img
-          src="/images/accordian-close-icon.svg"
+          src={
+            import.meta.env.VITE_BASE_URL + "/images/accordian-close-icon.svg"
+          }
           className="h-8 group-[.open]:hidden"
           alt=""
         />
         <img
-          src="/images/accordian-open-icon.svg"
+          src={
+            import.meta.env.VITE_BASE_URL + "/images/accordian-open-icon.svg"
+          }
           className="h-8 group-[.close]:hidden"
           alt=""
         />
@@ -70,12 +74,16 @@ const CloseAccordian = (prop: Iaccordian) => (
       <p className="font-bold text-lg hover:cursor-pointer">{prop.title}</p>
       <i>
         <img
-          src="/images/accordian-close-icon.svg"
+          src={
+            import.meta.env.VITE_BASE_URL + "/images/accordian-close-icon.svg"
+          }
           className="h-8 group-[.open]:hidden"
           alt=""
         />
         <img
-          src="/images/accordian-open-icon.svg"
+          src={
+            import.meta.env.VITE_BASE_URL + "/images/accordian-open-icon.svg"
+          }
           className="h-8 group-[.close]:hidden"
           alt=""
         />

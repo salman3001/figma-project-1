@@ -6,7 +6,7 @@ const Footer = () => {
       <List>
         <div className="flex flex-col gap-4">
           <img
-            src="/images/Launder-logo.svg"
+            src={import.meta.env.VITE_BASE_URL + "/images/Launder-logo.svg"}
             className="h-5 relative left-[-20px]"
             alt=""
           />
@@ -129,19 +129,34 @@ const Footer = () => {
         <div>copyright © 2023 Laundramoon All rights reserved.</div>
         <div className="flex gap-2 pr-10">
           <a href="">
-            <img src="/images/fb-icon.svg" alt="" />
+            <img
+              src={import.meta.env.VITE_BASE_URL + "/images/fb-icon.svg"}
+              alt=""
+            />
           </a>
           <a href="">
-            <img src="/images/twitter-icon.svg" alt="" />
+            <img
+              src={import.meta.env.VITE_BASE_URL + "/images/twitter-icon.svg"}
+              alt=""
+            />
           </a>
           <a href="">
-            <img src="/images/insta-icon.svg" alt="" />
+            <img
+              src={import.meta.env.VITE_BASE_URL + "/images/insta-icon.svg"}
+              alt=""
+            />
           </a>
           <a href="">
-            <img src="/images/linkedin-icon.svg" alt="" />
+            <img
+              src={import.meta.env.VITE_BASE_URL + "/images/linkedin-icon.svg"}
+              alt=""
+            />
           </a>
           <a href="">
-            <img src="/images/pintrest-icon.svg" alt="" />
+            <img
+              src={import.meta.env.VITE_BASE_URL + "/images/pintrest-icon.svg"}
+              alt=""
+            />
           </a>
         </div>
       </div>

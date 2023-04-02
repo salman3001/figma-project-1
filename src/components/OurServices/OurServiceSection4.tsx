@@ -1,5 +1,4 @@
 import CheckSteper from "../common/CheckSteper";
-import CheckSvg from "../common/CheckSvg";
 
 const OurServiceSection4 = () => {
   const data = [
@@ -81,7 +80,13 @@ const OurServiceSection4 = () => {
         </p>
       </div>
       <div className="z-10">
-        <img src="/images/man-holding-dirty-cloth.png" alt="" />
+        <img
+          src={
+            import.meta.env.VITE_BASE_URL +
+            "/images/man-holding-dirty-cloth.png"
+          }
+          alt=""
+        />
       </div>
       <div className="flex relative">
         <div className="absolute md:px-20 pb-0 top-[-100px]  ">

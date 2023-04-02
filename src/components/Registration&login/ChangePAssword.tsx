@@ -7,19 +7,32 @@ const ChangePAssword = () => {
     <main className="grid relative container mx-auto lg:grid-cols-2 min-h-screen  ">
       <div className="bg-[#00A5BF] relative flex text-white flex-col justify-between  items-center">
         <h1 className="w-full p-6 border-b border-white border-opacity-20">
-          <img src="/images/launder-logo-white.svg" className="h-4 " alt="" />
+          <img
+            src={
+              import.meta.env.VITE_BASE_URL + "/images/launder-logo-white.svg"
+            }
+            className="h-4 "
+            alt=""
+          />
         </h1>
         <div className="flex pt-8 flex-col items-center">
           <h1 className="text-4xl">Welcome back!</h1>
           <p className="opacity-80">See the latest system update on our blog</p>
         </div>
-        <img src="/images/loginart.png" alt="" className="self-start" />
+        <img
+          src={import.meta.env.VITE_BASE_URL + "/images/loginart.png"}
+          alt=""
+          className="self-start"
+        />
       </div>
       <div className="bg-white ">
         <h1 className="w-full p-5 border-b text-end border-gray-300 border-opacity-20">
           <p>
             Don't have an account?{" "}
-            <a className="text-[#00A5BF]" href="/signup">
+            <a
+              className="text-[#00A5BF]"
+              href={import.meta.env.VITE_BASE_URL + "/signup"}
+            >
               Signup
             </a>
           </p>
@@ -51,15 +64,25 @@ const ChangePAssword = () => {
             </div>
             <button className="bg-[#00A5BF] w-full p-4 rounded-lg flex gap-2 text-white justify-center items-center text-xl">
               <span>Login</span>{" "}
-              <img src="/images/arrow.svg" className="h-4" alt="" />
+              <img
+                src={import.meta.env.VITE_BASE_URL + "/images/arrow.svg"}
+                className="h-4"
+                alt=""
+              />
             </button>
             <OrDivider />
             <div className="flex gap-4">
               <button>
-                <img src="/images/google-btn.png" alt="" />
+                <img
+                  src={import.meta.env.VITE_BASE_URL + "/images/google-btn.png"}
+                  alt=""
+                />
               </button>
               <button>
-                <img src="/images/fb-btn.png" alt="" />
+                <img
+                  src={import.meta.env.VITE_BASE_URL + "/images/fb-btn.png"}
+                  alt=""
+                />
               </button>
             </div>
           </div>
@@ -102,7 +125,11 @@ const ChangePAssword = () => {
               type="submit"
             >
               <span>Submit</span>{" "}
-              <img src="/images/arrow.svg" className="h-4" alt="" />
+              <img
+                src={import.meta.env.VITE_BASE_URL + "/images/arrow.svg"}
+                className="h-4"
+                alt=""
+              />
             </button>
           </form>
         </div>

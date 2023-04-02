@@ -20,23 +20,35 @@ const Contactus = () => {
               Talk to our product analytics expert
             </h1>
             <p className="text-xl md:text-2xl">Our Location</p>
-            <img src="/images/location.png" alt="" />
+            <img
+              src={import.meta.env.VITE_BASE_URL + "/images/location.png"}
+              alt=""
+            />
             <div className="grid lg:grid-cols-2 gap-4 place-items-start pt-2  [&>p]:opacity-70 [&>div>img]:h-12">
               <div className="flex gap-2 items-center">
-                <img src="/images/location 1.svg" alt="" />
+                <img
+                  src={import.meta.env.VITE_BASE_URL + "/images/location 1.svg"}
+                  alt=""
+                />
                 <p>
                   Nash Conversions Ltd, Unit 5, Shaftesbury Road, LONDON, E10
                   7DA
                 </p>
               </div>
               <div className="flex gap-2">
-                <img src="/images/mail 1.svg" alt="" />
+                <img
+                  src={import.meta.env.VITE_BASE_URL + "/images/mail 1.svg"}
+                  alt=""
+                />
                 <p>
                   londramoon@email.com <br /> londramoon@email.com
                 </p>
               </div>
               <div className="flex gap-2">
-                <img src="/images/phone 1.svg" alt="" />
+                <img
+                  src={import.meta.env.VITE_BASE_URL + "/images/phone 1.svg"}
+                  alt=""
+                />
                 <p>+1 73657029000</p>
               </div>
               <div className="flex h-10 ">
