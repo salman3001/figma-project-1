@@ -7,6 +7,7 @@ import Contactus from "./components/contactus/Contactus";
 import Faqs from "./components/Faqs/Faqs";
 import Home from "./components/Home";
 import Location from "./components/Location/Location";
+import Orders from "./components/Orders/Orders";
 import OurServices from "./components/OurServices/OurServices";
 import Services from "./components/OurServices/Services";
 import Privacy from "./components/Privacy/Privacy";
@@ -48,6 +49,7 @@ function App() {
       <Route path="failed" Component={Failed} />
       <Route path="changepassword" Component={ChangePAssword} />
       <Route path="successfullychanged" Component={SuccessfullyChanged} />
+      <Route path="orders" Component={Orders} />
     </Routes>
   );
 }

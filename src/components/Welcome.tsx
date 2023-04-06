@@ -70,6 +70,9 @@ const Welcome = () => {
         <Link to="/successfullychanged" className="btn btn-link">
           Successfully Changed
         </Link>
+        <Link to="/orders" className="btn btn-link">
+          Orders
+        </Link>
       </ul>
     </div>
   );
