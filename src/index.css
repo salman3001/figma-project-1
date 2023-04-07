@@ -9,7 +9,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+@layer components {
   body {
     @apply bg-[#E8E8E8];
   }
@@ -86,5 +86,15 @@
       #eaeff3 73.06%,
       #d0e3f1 96.73%
     );
+  }
+
+  .promo-card-gradient {
+    background: linear-gradient(
+      260.16deg,
+      #fcfcfc 18.31%,
+      #eaeff3 73.06%,
+      #d0e3f1 96.73%
+    );
+    border-radius: 9px;
   }
 }
