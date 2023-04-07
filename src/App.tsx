@@ -7,10 +7,15 @@ import Contactus from "./components/contactus/Contactus";
 import Faqs from "./components/Faqs/Faqs";
 import Home from "./components/Home";
 import Location from "./components/Location/Location";
+import AddAddress from "./components/MyAccount/AddAddress";
+import MyAccount from "./components/MyAccount/MyAccount";
 import Orders from "./components/Orders/Orders";
+import OrderTracking from "./components/Orders/OrderTracking";
 import OurServices from "./components/OurServices/OurServices";
 import Services from "./components/OurServices/Services";
 import Privacy from "./components/Privacy/Privacy";
+import Promotions2 from "./components/promotion/Promotion2";
+import Promotions from "./components/promotion/Promotions";
 import ChangePAssword from "./components/Registration&login/ChangePAssword";
 import CheckYouEmail from "./components/Registration&login/CheckYouEmail";
 import EnterOtp from "./components/Registration&login/EnterOtp";
@@ -50,6 +55,11 @@ function App() {
       <Route path="changepassword" Component={ChangePAssword} />
       <Route path="successfullychanged" Component={SuccessfullyChanged} />
       <Route path="orders" Component={Orders} />
+      <Route path="ordertracking" Component={OrderTracking} />
+      <Route path="promotions" Component={Promotions} />
+      <Route path="promotions2" Component={Promotions2} />
+      <Route path="myaccount" Component={MyAccount} />
+      <Route path="addaddress" Component={AddAddress} />
     </Routes>
   );
 }

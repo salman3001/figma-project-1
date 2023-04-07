@@ -73,6 +73,21 @@ const Welcome = () => {
         <Link to="/orders" className="btn btn-link">
           Orders
         </Link>
+        <Link to="/ordertracking" className="btn btn-link">
+          Order tracking
+        </Link>
+        <Link to="/promotions" className="btn btn-link">
+          Promotions
+        </Link>
+        <Link to="/promotions2" className="btn btn-link">
+          Promotions2
+        </Link>
+        <Link to="/myaccount" className="btn btn-link">
+          My Account
+        </Link>
+        <Link to="/addaddress" className="btn btn-link">
+          Add address
+        </Link>
       </ul>
     </div>
   );

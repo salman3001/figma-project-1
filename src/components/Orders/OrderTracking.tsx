@@ -5,7 +5,7 @@ import DateInput from "../common/forms/DateInput";
 import SelectInput from "../common/forms/SelectInput";
 import OrderCard from "../common/OrderCard";
 
-const Orders = () => {
+const OrderTracking = () => {
   return (
     <div className=" bg-white">
       <Drawer
@@ -52,10 +52,10 @@ const Orders = () => {
             />
           </div>
         }
-        modelstate="unchecked"
+        modelstate="checked"
       />
     </div>
   );
 };
 
-export default Orders;
+export default OrderTracking;
