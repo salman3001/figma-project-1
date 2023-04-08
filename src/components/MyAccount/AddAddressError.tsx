@@ -1,8 +1,7 @@
-import React from "react";
 import DashboardNav from "../common/DashboardNav";
 import Drawer from "../common/Drawer";
 
-const MyAccount = () => {
+const AddAddressError = () => {
   return (
     <div className=" bg-white">
       <Drawer
@@ -43,12 +42,32 @@ const MyAccount = () => {
           </>
         }
         modelContent={
-          <div className="w-full h-full flex justify-center items-center"></div>
+          <div className="w-full h-full flex flex-col gap-6 justify-center items-center">
+            <img
+              src={import.meta.env.VITE_BASE_URL + "/images/restricted.svg"}
+              alt=""
+            />
+            <h1 className="text-2xl font-bold max-w-sm text-center">
+              Oops We don’t serve at your location!
+            </h1>
+            <p className="max-w-sm text-center opacity-40">
+              Please fill in your details below and we will get in touch with
+              you shortly.
+            </p>
+            <button className="bg-[#00A5BF] w-full p-4 rounded-lg flex gap-2 text-white justify-center items-center text-xl">
+              <span>Go Back</span>{" "}
+              <img
+                src={import.meta.env.VITE_BASE_URL + "/images/arrow.svg"}
+                className="h-4"
+                alt=""
+              />
+            </button>
+          </div>
         }
-        modelstate="unchecked"
+        modelstate="checked"
       />
     </div>
   );
 };
 
-export default MyAccount;
+export default AddAddressError;

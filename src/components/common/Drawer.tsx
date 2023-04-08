@@ -3,7 +3,7 @@ import Model from "./Model";
 
 interface IDrawer {
   content: ReactNode;
-  active: "orders" | "promo" | "myAccount";
+  active: "orders" | "promo" | "myAccount" | "";
   modelContent: ReactNode;
   modelstate: "checked" | "unchecked";
 }

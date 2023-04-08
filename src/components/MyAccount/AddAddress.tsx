@@ -11,7 +11,7 @@ const AddAddress = () => {
         content={
           <>
             <DashboardNav title="My Account" />
-            <div className="flex flex-col px-10 gap-8 py-20 xl:py-10">
+            <div className="flex flex-col px-5 md:px-10 gap-8 py-20 xl:py-10">
               <h1 className="text-4xl font-bold">My Account</h1>
               <div className=" flex flex-col">
                 <div className="flex space-x-4 text-center text-white">

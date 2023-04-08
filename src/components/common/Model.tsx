@@ -16,7 +16,7 @@ const Model = (prop: IModel) => {
         defaultChecked={prop.default === "checked" ? false : true}
       />
       <div className="backdrop-brightness-50 p-5 md:p-10 flex  justify-center items-center fixed   h-screen w-full peer-checked:hidden visible z-50">
-        <div className="grow max-w-2xl relative rounded-md max-h-[80%] bg-white flex flex-col items-center justify-center p-12 gap-6">
+        <div className="grow max-w-2xl relative rounded-md max-h-[80%] bg-white flex flex-col m-auto p-12 gap-6 overflow-scroll scrollbar-hide">
           <label
             htmlFor="modal-check"
             className="absolute top-4 font-[10] cursor-pointer opacity-60 text-4xl right-6"

@@ -19,7 +19,9 @@ const DashboardNav = (prop: IDashnav) => {
           />
         </label>
         <div className="flex xl:w-96 items-center gap-4 ">
-          <p className="text-2xl font-bold hidden md:block">{prop.title}</p>
+          <p className="text-2xl font-bold hidden md:block w-52">
+            {prop.title}
+          </p>
           <SearchInput />
         </div>
       </div>

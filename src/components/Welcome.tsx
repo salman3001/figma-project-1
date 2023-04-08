@@ -88,6 +88,33 @@ const Welcome = () => {
         <Link to="/addaddress" className="btn btn-link">
           Add address
         </Link>
+        <Link to="/addaddresserror" className="btn btn-link">
+          Add address Error
+        </Link>
+        <Link to="/addaddressform" className="btn btn-link">
+          Add address form
+        </Link>
+        <Link to="/myaccount2" className="btn btn-link">
+          My Account 2
+        </Link>
+        <Link to="/myaccountprofile" className="btn btn-link">
+          My Account Profile
+        </Link>
+        <Link to="/myaccountchangepassword" className="btn btn-link">
+          My Account change password
+        </Link>
+        <Link to="/myaccountpasswordchanged" className="btn btn-link">
+          My Account password chnaged
+        </Link>
+        <Link to="/ordernowaddress" className="btn btn-link">
+          Order Now - Address
+        </Link>
+        <Link to="/ordernowaddaddress" className="btn btn-link">
+          Order Now - add address
+        </Link>
+        <Link to="/ordernowaddress2" className="btn btn-link">
+          Order Now - Address2
+        </Link>
       </ul>
     </div>
   );

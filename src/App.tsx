@@ -8,7 +8,16 @@ import Faqs from "./components/Faqs/Faqs";
 import Home from "./components/Home";
 import Location from "./components/Location/Location";
 import AddAddress from "./components/MyAccount/AddAddress";
+import AddAddressError from "./components/MyAccount/AddAddressError";
+import AddAddressForm from "./components/MyAccount/AddAddressForm";
 import MyAccount from "./components/MyAccount/MyAccount";
+import MyAccount2 from "./components/MyAccount/MyAccount2";
+import MyAccountChanePassword from "./components/MyAccount/MyAccountChanePassword";
+import MyAccountPasswordChanged from "./components/MyAccount/MyAccountPasswordChanged";
+import MyAccountProfile from "./components/MyAccount/MyAccountProfile";
+import OrderNowAddAddress from "./components/OrderNow/OrderNowAddAddress";
+import OrderNowAddress2 from "./components/OrderNow/OrderNowAddress2";
+import OrderNowAdress from "./components/OrderNow/OrderNowAdress";
 import Orders from "./components/Orders/Orders";
 import OrderTracking from "./components/Orders/OrderTracking";
 import OurServices from "./components/OurServices/OurServices";
@@ -60,6 +69,20 @@ function App() {
       <Route path="promotions2" Component={Promotions2} />
       <Route path="myaccount" Component={MyAccount} />
       <Route path="addaddress" Component={AddAddress} />
+      <Route path="addaddresserror" Component={AddAddressError} />
+      <Route path="addaddressform" Component={AddAddressForm} />
+      <Route path="myaccount2" Component={MyAccount2} />
+      <Route path="myaccountprofile" Component={MyAccountProfile} />
+      <Route
+        path="myaccountchangepassword"
+        Component={MyAccountChanePassword}
+      />
+      <Route
+        path="myaccountpasswordchanged"
+        Component={MyAccountPasswordChanged}
+      />
+      <Route path="ordernowaddaddress" Component={OrderNowAddAddress} />
+      <Route path="ordernowaddress2" Component={OrderNowAddress2} />
     </Routes>
   );
 }

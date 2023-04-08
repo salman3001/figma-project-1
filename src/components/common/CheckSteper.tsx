@@ -7,18 +7,18 @@ const CheckSteper = (prop: IcheckSteper) => {
       {prop.data.map((data, index, array) => (
         <li
           key={index}
-          className={`pb-10 pl-6 border-l-2 ${
+          className={`pb-1 pl-6 border-l-2 ${
             data.completed
               ? "border-[#00A5BF] [&>span]:bg-[#00A5BF] [&>span]:ring-[#00A5BF]"
-              : index > array.length - 1
+              : index < array.length - 1
               ? "border-gray-400 [&>span]:bg-gray-400 [&>span]:ring-gray-400"
               : "border-none [&>span]:bg-gray-400 [&>span]:ring-gray-400"
           }`}
         >
-          <span className="absolute flex items-center justify-center w-6 h-6 rounded-full -left-3 ring-4 ">
+          <span className="absolute flex items-center justify-center w-5 h-5  rounded-full -left-2 ring-4 ">
             <svg
               aria-hidden="true"
-              className="w-5 h-5 text-white"
+              className="w-4 h-5 text-white"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
