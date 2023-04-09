@@ -45,7 +45,7 @@ const Signup = () => {
                 you shortly.
               </p>
             </div>
-            <div className="w-full flex flex-col gap-8">
+            <form id="signup-form" className="w-full flex flex-col gap-8">
               <div className="flex gap-8">
                 <div className="flex justify-center items-center gap-4 font-bold">
                   <input
@@ -107,8 +107,12 @@ const Signup = () => {
                   />
                 </div>
               </div>
-            </div>
-            <button className="bg-[#00A5BF] w-full p-4 rounded-lg flex gap-2 text-white justify-center items-center text-xl">
+            </form>
+            <button
+              form="signup-form"
+              type="submit"
+              className="bg-[#00A5BF] w-full p-4 rounded-lg flex gap-2 text-white justify-center items-center text-xl"
+            >
               <span>Next</span>{" "}
               <img
                 src={import.meta.env.VITE_BASE_URL + "/images/arrow.svg"}
