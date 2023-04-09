@@ -2,10 +2,9 @@ import { ReactNode } from "react";
 import CheckSteper from "../common/CheckSteper";
 import DashboardNav from "../common/DashboardNav";
 import Drawer from "../common/Drawer";
-import FormInput from "../common/forms/FormInput";
 import PromoCard from "../common/PromoCard";
 
-const OrderNowAddress2 = () => {
+const OrderNowAddressSelected = () => {
   return (
     <div className=" bg-white">
       <Drawer
@@ -47,6 +46,7 @@ const OrderNowAddress2 = () => {
                     Existing Address
                   </h1>
                   <AddressCard
+                    active
                     svg={
                       <svg
                         width="34"
@@ -114,7 +114,7 @@ const OrderNowAddress2 = () => {
                   </a>
                   <button
                     disabled
-                    className="bg-gray-300 w-52 p-4 rounded-lg flex gap-2 text-white justify-center items-center text-xl self-end"
+                    className="bg-[#00A5BF] w-52 p-4 rounded-lg flex gap-2 text-white justify-center items-center text-xl self-end"
                   >
                     <span>Next</span>{" "}
                     <img
@@ -133,10 +133,14 @@ const OrderNowAddress2 = () => {
                         child: (
                           <div>
                             <p className="font-bold">Address</p>
+                            <p className="opacity-50">
+                              Nash Conversions Ltd, Unit 5, Shaftesbury Road,
+                              LONDON, E10 7DA
+                            </p>
                             <div className="divider"></div>
                           </div>
                         ),
-                        completed: false,
+                        completed: true,
                       },
                       {
                         child: (
@@ -211,10 +215,11 @@ const OrderNowAddress2 = () => {
   );
 };
 
-export default OrderNowAddress2;
+export default OrderNowAddressSelected;
 
 interface IAddressCard {
   svg: ReactNode;
+  active?: boolean;
 }
 
 const AddressCard = (prop: IAddressCard) => {
@@ -245,7 +250,13 @@ const AddressCard = (prop: IAddressCard) => {
           </span>
           <span>Edit</span>
         </button>
-        <button className="py-2 px-4 rounded-full bg-[#00A5BF] w-32">
+        <button
+          className={`py-2 px-4 rounded-full ${
+            prop.active
+              ? "bg-white text-[#00A5BF] border-[#00A5BF] border"
+              : "bg-[#00A5BF]"
+          } w-32`}
+        >
           Select
         </button>
       </div>

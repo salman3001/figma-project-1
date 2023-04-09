@@ -1,7 +1,7 @@
 const MobileInput = (prop: { placeholder: string; name: string }) => {
   return (
     <div className="flex">
-      <select className="w-[30%]">
+      <select className="w-[30%] border-y rounded-l-lg border-l">
         <option value="+1" className="flex justify-center text-center">
           +1
         </option>
@@ -13,7 +13,7 @@ const MobileInput = (prop: { placeholder: string; name: string }) => {
         </option>
       </select>
       <input
-        className=" border  p-4 w-full text-black rounded-lg"
+        className=" border  p-4 w-full text-black rounded-r-lg"
         type="number"
         name={prop.name}
         id=""
