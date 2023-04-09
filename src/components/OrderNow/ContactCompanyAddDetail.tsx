@@ -21,7 +21,7 @@ const ContactCompanyAddDetail = () => {
               </p>
             </div>
             <div className="h-14 flex items-center px-2 md:px-10 w-full ">
-              <div className="px-1 md:px-2 h-full flex flex-col justify-center bg-[#00A5BF] text-white">
+              <div className="px-1 md:px-2 h-full flex flex-col justify-center">
                 Address
               </div>
               <div className="px-1 md:px-2 h-full flex flex-col justify-center">
@@ -30,7 +30,7 @@ const ContactCompanyAddDetail = () => {
               <div className="px-1 md:px-2 h-full flex flex-col justify-center">
                 Collection
               </div>
-              <div className="px-1 md:px-2 h-full flex flex-col justify-center">
+              <div className="px-1 md:px-2 h-full flex flex-col justify-center bg-[#00A5BF] text-white">
                 Contacts
               </div>
               <div className="px-1 md:px-2 h-full flex flex-col justify-center">
@@ -39,7 +39,7 @@ const ContactCompanyAddDetail = () => {
             </div>
             {/* progress */}
             <div className="w-full h-1 bg-[#CBECF1]">
-              <div className="w-[60%] bg-[#18BFDA] h-full"></div>
+              <div className="w-[80%] bg-[#18BFDA] h-full"></div>
             </div>
             <div className="grid xl:grid-cols-3 w-full">
               <div className="xl:col-span-2 p-5 w-full md:p-10">
@@ -287,7 +287,7 @@ const ContactCompanyAddDetail = () => {
                   <FormInput name="name" placeholder="williams" type="text" />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <Label titile="surname" for="surname" />
+                  <Label titile="Surname" for="surname" />
                   <FormInput name="surname" placeholder="John" type="text" />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -299,7 +299,7 @@ const ContactCompanyAddDetail = () => {
                   />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <Label titile="mobile" for="mobile" />
+                  <Label titile="Mobile" for="mobile" />
                   <MobileInput name="mobile" placeholder="054786422" />
                 </div>
                 <div className="flex flex-col gap-2">

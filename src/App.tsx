@@ -25,6 +25,7 @@ import OrderNowAddAddress from "./components/OrderNow/OrderNowAddAddress";
 import OrderNowAddress2 from "./components/OrderNow/OrderNowAddress2";
 import OrderNowAddressSelected from "./components/OrderNow/OrderNowAddressSelected";
 import OrderNowAdress from "./components/OrderNow/OrderNowAdress";
+import Payment from "./components/OrderNow/Payment";
 import Orders from "./components/Orders/Orders";
 import OrderTracking from "./components/Orders/OrderTracking";
 import OurServices from "./components/OurServices/OurServices";
@@ -107,6 +108,7 @@ function App() {
         path="contactcompanyadddetail"
         Component={ContactCompanyAddDetail}
       />
+      <Route path="payment" Component={Payment} />
     </Routes>
   );
 }

@@ -136,6 +136,9 @@ const Welcome = () => {
         <Link to="/contactcompanyadddetail" className="btn btn-link">
           Contact-Company-add-detail
         </Link>
+        <Link to="/payment" className="btn btn-link">
+          Payment
+        </Link>
       </ul>
     </div>
   );

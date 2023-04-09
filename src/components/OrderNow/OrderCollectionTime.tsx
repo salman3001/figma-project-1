@@ -18,13 +18,13 @@ const OrderCollectionTime = () => {
               </p>
             </div>
             <div className="h-14 flex items-center px-2 md:px-10 w-full ">
-              <div className="px-1 md:px-2 h-full flex flex-col justify-center bg-[#00A5BF] text-white">
+              <div className="px-1 md:px-2 h-full flex flex-col justify-center">
                 Address
               </div>
               <div className="px-1 md:px-2 h-full flex flex-col justify-center">
                 Service
               </div>
-              <div className="px-1 md:px-2 h-full flex flex-col justify-center">
+              <div className="px-1 md:px-2 h-full flex flex-col justify-center bg-[#00A5BF] text-white">
                 Collection
               </div>
               <div className="px-1 md:px-2 h-full flex flex-col justify-center">
