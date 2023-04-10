@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 const Welcome = () => {
   return (
     <div className="container mx-auto p-10">
-      <h1>Welcome to laundraMoon Design workshop !</h1>
+      <h1 className="text-xl font-bold">
+        Welcome to laundraMoon Design workshop !
+      </h1>
       <h3>Explore the page designes below</h3>
       <div className="divider"></div>
+      <h1 className="text-xl font-bold">Website</h1>
       <ul>
         <Link to="/home" className="btn btn-link">
           Home
@@ -37,6 +40,10 @@ const Welcome = () => {
         <Link to="/privacy" className="btn btn-link">
           Privacy
         </Link>
+      </ul>
+      <div className="divider"></div>
+      <h1 className="text-xl font-bold">Login & Registration</h1>
+      <ul>
         <Link to="/login" className="btn btn-link">
           Login
         </Link>
@@ -70,18 +77,30 @@ const Welcome = () => {
         <Link to="/successfullychanged" className="btn btn-link">
           Successfully Changed
         </Link>
+      </ul>
+      <div className="divider"></div>
+      <h1 className="text-xl font-bold">Orders</h1>
+      <ul>
         <Link to="/orders" className="btn btn-link">
           Orders
         </Link>
         <Link to="/ordertracking" className="btn btn-link">
           Order tracking
         </Link>
+      </ul>
+      <div className="divider"></div>
+      <h1 className="text-xl font-bold">Promotions</h1>
+      <ul>
         <Link to="/promotions" className="btn btn-link">
           Promotions
         </Link>
         <Link to="/promotions2" className="btn btn-link">
           Promotions2
         </Link>
+      </ul>
+      <div className="divider"></div>
+      <h1 className="text-xl font-bold">My Account</h1>
+      <ul>
         <Link to="/myaccount" className="btn btn-link">
           My Account
         </Link>
@@ -106,6 +125,10 @@ const Welcome = () => {
         <Link to="/myaccountpasswordchanged" className="btn btn-link">
           My Account password chnaged
         </Link>
+      </ul>
+      <div className="divider"></div>
+      <h1 className="text-xl font-bold">Order Now</h1>
+      <ul>
         <Link to="/ordernowaddress" className="btn btn-link">
           Order Now - Address
         </Link>
@@ -128,7 +151,7 @@ const Welcome = () => {
           Order collection time selected
         </Link>
         <Link to="/contact" className="btn btn-link">
-          C ontact
+          Contact
         </Link>
         <Link to="/contactadddetail" className="btn btn-link">
           Contact-add detail

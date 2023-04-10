@@ -8,7 +8,7 @@ const Accordian = (prop: Iaccordian) => {
     <details className="group ">
       <summary className="list-none before:content-[+] flex justify-between cursor-pointer font-bold text-lg">
         <span>{prop.title}</span>
-        <span className="flex group-open:hidden justify-center items-center p-2 aspect-square  border rounded-full">
+        <span className="flex group-open:hidden justify-center items-center p-2 aspect-square  border rounded-full border-black">
           <svg
             width="18"
             height="15"
@@ -36,7 +36,7 @@ const Accordian = (prop: Iaccordian) => {
             />
           </svg>
         </span>
-        <span className="hidden group-open:flex justify-center items-center p-2 aspect-square  border rounded-full">
+        <span className="hidden group-open:flex justify-center items-center p-2 aspect-square  border rounded-full border-black">
           <svg
             width="18"
             height="2"

@@ -1,4 +1,4 @@
-import Accordian from "../Accordian";
+import Accordian from "../common/Accordian";
 
 const OurServiceSection6 = () => {
   return (

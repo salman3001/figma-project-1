@@ -1,4 +1,4 @@
-import Accordian from "../Accordian";
+import Accordian from "../common/Accordian";
 import Footer from "../footer/Footer";
 import Section10 from "../main/Section10";
 import Section8 from "../main/Section8";

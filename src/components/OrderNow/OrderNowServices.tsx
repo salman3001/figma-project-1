@@ -84,35 +84,150 @@ const OrderNowServices = () => {
                           Frequently asked questions
                         </label>
                         {/* price table */}
-                        <div className="peer-checked/pricelist:block overflow-scroll md:scrollbar-hide hidden mt-5 col-span-3">
-                          <table className="w-[500px] md:w-full text-center ">
-                            <thead>
-                              <tr className="">
-                                <th>Products</th>
-                                <th>Pricing</th>
-                                <th>Quantity</th>
-                                <th>Estimated</th>
-                              </tr>
-                            </thead>
-                            <tbody className="text-[#747474] [&>tr>td]:p-5">
-                              <tr>
-                                <TableData />
-                              </tr>
-                              <tr>
-                                <TableData />
-                              </tr>
-                              <tr>
-                                <TableData />
-                              </tr>
-                              <tr>
-                                <TableData />
-                              </tr>
-                            </tbody>
-                          </table>
+                        <div className="peer-checked/pricelist:block  hidden mt-5 col-span-3">
+                          {/* <div className="w-full overflow-scroll"> */}
+                          <div className="w-full flex flex-wrap items-center justify-center gap-2">
+                            <input
+                              type="checkbox"
+                              name="shirt"
+                              id="shirt"
+                              className="hidden peer/shirt"
+                              checked
+                            />
+                            <label
+                              htmlFor="shirt"
+                              className="border cursor-pointer py-2 px-10 peer-checked/shirt:bg-[#E5FCFF] peer-checked/shirt:border-[#00A5BF] rounded-full border-[#C8C8C8] "
+                            >
+                              Shirt
+                            </label>
+                            <input
+                              type="checkbox"
+                              name="bottom"
+                              id="bottom"
+                              className="hidden peer/bottom"
+                            />
+                            <label
+                              htmlFor="bottom"
+                              className="border cursor-pointer py-2 px-10 peer-checked/bottom:bg-[#E5FCFF] peer-checked/bottom:border-[#00A5BF] rounded-full border-[#C8C8C8] "
+                            >
+                              Bottoms
+                            </label>
+                            <input
+                              type="checkbox"
+                              name="Tops"
+                              id="Tops"
+                              className="hidden peer/Tops"
+                              checked
+                            />
+                            <label
+                              htmlFor="Tops"
+                              className="border cursor-pointer py-2 px-10 peer-checked/Tops:bg-[#E5FCFF] peer-checked/Tops:border-[#00A5BF] rounded-full border-[#C8C8C8] "
+                            >
+                              Tops
+                            </label>
+                            <input
+                              type="checkbox"
+                              name="Dresses"
+                              id="Dresses"
+                              className="hidden peer/Dresses"
+                            />
+                            <label
+                              htmlFor="Dresses"
+                              className="border cursor-pointer py-2 px-10 peer-checked/Dresses:bg-[#E5FCFF] peer-checked/Dresses:border-[#00A5BF] rounded-full border-[#C8C8C8] "
+                            >
+                              Dresses
+                            </label>
+                            <input
+                              type="checkbox"
+                              name="Jackets"
+                              id="Jackets"
+                              className="hidden peer/Jackets"
+                            />
+                            <label
+                              htmlFor="Jackets"
+                              className="border cursor-pointer py-2 px-10 peer-checked/Jackets:bg-[#E5FCFF] peer-checked/Jackets:border-[#00A5BF] rounded-full border-[#C8C8C8] "
+                            >
+                              Jackets
+                            </label>
+                            <input
+                              type="checkbox"
+                              name="Outwear"
+                              id="Outwear"
+                              className="hidden peer/Outwear"
+                            />
+                            <label
+                              htmlFor="Outwear"
+                              className="border cursor-pointer py-2 px-10 peer-checked/Outwear:bg-[#E5FCFF] peer-checked/Outwear:border-[#00A5BF] rounded-full border-[#C8C8C8] "
+                            >
+                              Outwear
+                            </label>
+                            <input
+                              type="checkbox"
+                              name="Bedsheets"
+                              id="Bedsheets"
+                              className="hidden peer/Bedsheets"
+                            />
+                            <label
+                              htmlFor="Bedsheets"
+                              className="border cursor-pointer py-2 px-10 peer-checked/Bedsheets:bg-[#E5FCFF] peer-checked/Bedsheets:border-[#00A5BF] rounded-full border-[#C8C8C8] "
+                            >
+                              Bedsheets
+                            </label>
+                          </div>
+                          {/* </div> */}
+                          <div className="overflow-scroll md:scrollbar-hide mt-4">
+                            <table className="w-[500px] md:w-full text-center ">
+                              <thead>
+                                <tr className="">
+                                  <th>Products</th>
+                                  <th>Pricing</th>
+                                  <th>Quantity</th>
+                                  <th>Estimated</th>
+                                </tr>
+                              </thead>
+                              <tbody className="text-[#747474] [&>tr>td]:p-3">
+                                <tr>
+                                  <TableData />
+                                </tr>
+                                <tr>
+                                  <TableData />
+                                </tr>
+                                <tr>
+                                  <TableData />
+                                </tr>
+                                <tr>
+                                  <TableData />
+                                </tr>
+                                <tr className=" bg-[#E4F4FF] font-bold text-[#03444F]">
+                                  <td></td>
+                                  <td></td>
+                                  <td>Total Amount</td>
+                                  <td>&#163; 39.99</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div className="mt-8 flex justify-end items-center">
+                            <button className="bg-[#00A5BF] w-48 p-2 rounded-lg flex gap-2 text-white justify-center items-center text-xl">
+                              <span>Next</span>{" "}
+                              <img
+                                src={
+                                  import.meta.env.VITE_BASE_URL +
+                                  "/images/arrow.svg"
+                                }
+                                className="h-4"
+                                alt=""
+                              />
+                            </button>
+                          </div>
                         </div>
                         {/* faqs */}
-                        <div className="peer-checked/faqs:block hidden col-span-3">
-                          To Be done ....
+                        <div className="peer-checked/faqs:block hidden col-span-3 pt-6 pl-2">
+                          <ServiceOverView />
+                          <ServiceOverView />
+                          <ServiceOverView />
+                          <ServiceOverView />
+                          <ServiceOverView />
                         </div>
                       </div>
                     </div>
@@ -128,19 +243,42 @@ const OrderNowServices = () => {
                         child: (
                           <div>
                             <p className="font-bold">Address</p>
+                            <p className="font-bold">Address</p>
+                            <p className="opacity-50">
+                              Nash Conversions Ltd, Unit 5, Shaftesbury Road,
+                              LONDON, E10 7DA
+                            </p>
                             <div className="divider"></div>
                           </div>
                         ),
-                        completed: false,
+                        completed: true,
                       },
                       {
                         child: (
                           <div>
                             <p className="font-bold">Services</p>
+                            <p className="text-[#00A5BF]">Wash & Iron</p>
+                            <div className="grid grid-cols-2 opacity-60">
+                              <p>Shirt</p>
+                              <p>&#163; 12.99</p>
+                              <p>Top</p>
+                              <p>&#163; 12.99</p>
+                            </div>
+                            <p className="text-[#00A5BF]">Wash & Iron</p>
+                            <div className="grid grid-cols-2 opacity-60">
+                              <p>Ironing</p>
+                              <p>&#163; 12.99</p>
+                              <p>Top</p>
+                              <p>&#163; 12.99</p>
+                            </div>
+                            <div className="grid grid-cols-2 text-[#00A5BF]">
+                              <p>Total</p>
+                              <p>&#163; 72.99</p>
+                            </div>
                             <div className="divider"></div>
                           </div>
                         ),
-                        completed: false,
+                        completed: true,
                       },
                       {
                         child: (
@@ -268,5 +406,38 @@ const TableData = () => (
       </button>
     </td>
     <td> &#163; 12.99</td>
+  </>
+);
+
+const ServiceOverView = () => (
+  <>
+    <div className="flex gap-4 items-center">
+      <div>
+        <svg
+          width="21"
+          height="21"
+          viewBox="0 0 21 21"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.5 0C16.299 0 21 4.70102 21 10.5C21 16.299 16.299 21 10.5 21C4.70102 21 0 16.299 0 10.5C0 4.70102 4.70102 0 10.5 0ZM10.5 1.57476C5.57073 1.57476 1.57476 5.57074 1.57476 10.5C1.57476 15.4293 5.57073 19.4252 10.5 19.4252C15.4292 19.4252 19.4252 15.4293 19.4252 10.5C19.4252 5.57074 15.4292 1.57476 10.5 1.57476Z"
+            fill="#00A5BF"
+          />
+          <path
+            d="M5 10.5L8.5 14L15.5 7"
+            stroke="#00A5BF"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div className="space-y-4">
+        <p className="text-lg font-bold">Service Overview</p>
+        <p>Lorem Ipsum has been the industry's standard </p>
+      </div>
+    </div>
+    <div className="divider"></div>
   </>
 );
