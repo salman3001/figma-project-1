@@ -5,20 +5,20 @@ import MobileInput from "../common/forms/MobileInput";
 
 const Signup2 = () => {
   return (
-    <main className="grid container mx-auto lg:grid-cols-2 min-h-screen max-w-screen  ">
+    <main className="grid container2 mx-auto lg:grid-cols-2 min-h-screen max-w-screen  ">
       <div className="bg-[#00A5BF] relative flex text-white flex-col justify-between  items-center">
         <h1 className="w-full p-6 border-b border-white border-opacity-20">
           <img
             src={
               import.meta.env.VITE_BASE_URL + "/images/launder-logo-white.svg"
             }
-            className="h-4 "
+            className="h-5 "
             alt=""
           />
         </h1>
         <div className="flex pt-8 flex-col items-center">
-          <h1 className="text-4xl">Welcome back!</h1>
-          <p className="opacity-80">See the latest system update on our blog</p>
+          <h1 className="h1-lg">Welcome back!</h1>
+          <p className="text-white">See the latest system update on our blog</p>
         </div>
         <img
           src={import.meta.env.VITE_BASE_URL + "/images/Signupart.png"}
@@ -28,7 +28,7 @@ const Signup2 = () => {
       </div>
       <div className="bg-white ">
         <h1 className="w-full p-5 border-b text-end border-gray-300 border-opacity-20">
-          <p>
+          <p className="flex gap-3 justify-end">
             I already have an accound?
             <a className="text-[#00A5BF]" href="/login">
               Login
@@ -38,15 +38,15 @@ const Signup2 = () => {
         <div className="flex flex-col  ">
           <div className="flex flex-col gap-16 justify-center items-center py-16 px-10 md:px-20 w-full  ">
             <div className="text-center flex flex-col gap-2">
-              <h1 className="text-3xl font-bold">Sign up to Laundramoon</h1>
-              <p className="opacity-70 max-w-sm">
+              <h1 className="h1-md">Sign up to Laundramoon</h1>
+              <p className="max-w-sm">
                 Please fill in your details below and we will get in touch with
                 you shortly.
               </p>
             </div>
             <div className="w-full flex flex-col gap-8">
               <div className="grid md:grid-cols-2 gap-4">
-                <div>
+                <div className="input-container">
                   <Label titile="Enter Landmark" for="landmark" />
                   <FormInput
                     name="landmark"
@@ -54,7 +54,7 @@ const Signup2 = () => {
                     type="text"
                   />
                 </div>
-                <div>
+                <div className="input-container">
                   <Label titile="Enter Street" for="street" />
                   <FormInput
                     name="street"
@@ -62,7 +62,7 @@ const Signup2 = () => {
                     type="text"
                   />
                 </div>
-                <div>
+                <div className="input-container">
                   <Label titile="Enter city" for="city" />
                   <FormInput
                     name="city"
@@ -70,7 +70,7 @@ const Signup2 = () => {
                     type="text"
                   />
                 </div>
-                <div>
+                <div className="input-container">
                   <Label titile="Enter State" for="state" />
                   <FormInput
                     name="state"
@@ -78,7 +78,7 @@ const Signup2 = () => {
                     type="text"
                   />
                 </div>
-                <div>
+                <div className="input-container">
                   <Label titile="Enter country" for="country" />
                   <FormInput
                     name="country"
@@ -86,7 +86,7 @@ const Signup2 = () => {
                     type="text"
                   />
                 </div>
-                <div>
+                <div className="input-container">
                   <Label titile="Zipcode" for="zipcode" />
                   <FormInput
                     name="zipcode"
@@ -96,7 +96,7 @@ const Signup2 = () => {
                 </div>
               </div>
             </div>
-            <button className="bg-[#00A5BF] w-full p-4 rounded-lg flex gap-2 text-white justify-center items-center text-xl">
+            <button className="form-btn">
               <span>Submit</span>{" "}
               <img
                 src={import.meta.env.VITE_BASE_URL + "/images/arrow.svg"}

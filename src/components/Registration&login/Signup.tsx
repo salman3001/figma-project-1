@@ -1,25 +1,22 @@
-import React from "react";
-import FormInput from "../common/forms/FormInput";
 import Label from "../common/forms/Label";
 import MobileInput from "../common/forms/MobileInput";
-import OrDivider from "../common/OrDivider";
 
 const Signup = () => {
   return (
-    <main className="grid container mx-auto lg:grid-cols-2 min-h-screen max-w-screen  ">
+    <main className="grid container2 mx-auto lg:grid-cols-2 min-h-screen max-w-screen  ">
       <div className="bg-[#00A5BF] relative flex text-white flex-col justify-between  items-center">
         <h1 className="w-full p-6 border-b border-white border-opacity-20">
           <img
             src={
               import.meta.env.VITE_BASE_URL + "/images/launder-logo-white.svg"
             }
-            className="h-4 "
+            className="h-6"
             alt=""
           />
         </h1>
         <div className="flex pt-8 flex-col items-center">
-          <h1 className="text-4xl">Welcome back!</h1>
-          <p className="opacity-80">See the latest system update on our blog</p>
+          <h1 className="h1-lg">Welcome back!</h1>
+          <p className="text-white">See the latest system update on our blog</p>
         </div>
         <img
           src={import.meta.env.VITE_BASE_URL + "/images/Signupart.png"}
@@ -29,7 +26,7 @@ const Signup = () => {
       </div>
       <div className="bg-white ">
         <h1 className="w-full p-5 border-b text-end border-gray-300 border-opacity-20">
-          <p>
+          <p className="flex gap-2 justify-end">
             I already have an accound?
             <a className="text-[#00A5BF]" href="/login">
               Login
@@ -38,9 +35,9 @@ const Signup = () => {
         </h1>
         <div className="flex flex-col  ">
           <div className="flex flex-col gap-16 justify-center items-center py-16 px-10 md:px-20 w-full  ">
-            <div className="text-center flex flex-col gap-2">
-              <h1 className="text-3xl font-bold">Sign up to Laundramoon</h1>
-              <p className="opacity-70 max-w-sm">
+            <div className="text-center flex justify-center  items-center flex-col gap-2">
+              <h1 className="h1-md">Sign up to Laundramoon</h1>
+              <p className="text-muted max-w-xs ">
                 Please fill in your details below and we will get in touch with
                 you shortly.
               </p>
@@ -70,37 +67,33 @@ const Signup = () => {
               </div>
 
               <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <Label titile="Name" for="name" />
-                  <FormInput name="name" placeholder="Williums" type="text" />
+                <div className="input-container">
+                  <label htmlFor="name">Name</label>
+                  <input name="name" placeholder="Williums" type="text" />
                 </div>
-                <div>
-                  <Label titile="Surname" for="text" />
-                  <FormInput name="name" placeholder="khan" type="text" />
+                <div className="input-container">
+                  <label htmlFor="surname">surname</label>
+                  <input name="name" placeholder="khan" type="text" />
                 </div>
-                <div>
-                  <Label titile="Bussiness Email" for="email" />
-                  <FormInput
+                <div className="input-container">
+                  <label htmlFor="email">Business Email</label>
+                  <input
                     name="email"
                     placeholder="jack@gmail.com"
                     type="email"
                   />
                 </div>
-                <div>
-                  <Label titile="Mobile No" for="mobile" />
+                <div className="input-container">
+                  <label htmlFor="mobile">Mobile</label>
                   <MobileInput placeholder="2382810277" name="mobile" />
                 </div>
-                <div>
+                <div className="input-container">
                   <Label titile="Password" for="password" />
-                  <FormInput
-                    name="password"
-                    placeholder="***"
-                    type="password"
-                  />
+                  <input name="password" placeholder="***" type="password" />
                 </div>
-                <div>
+                <div className="input-container">
                   <Label titile="Confirm Password" for="confirmPassword" />
-                  <FormInput
+                  <input
                     name="confirmPassword"
                     placeholder="******"
                     type="password"
@@ -108,15 +101,10 @@ const Signup = () => {
                 </div>
               </div>
             </form>
-            <button
-              form="signup-form"
-              type="submit"
-              className="bg-[#00A5BF] w-full p-4 rounded-lg flex gap-2 text-white justify-center items-center text-xl"
-            >
+            <button form="signup-form" type="submit" className="form-btn">
               <span>Next</span>{" "}
               <img
                 src={import.meta.env.VITE_BASE_URL + "/images/arrow.svg"}
-                className="h-4"
                 alt=""
               />
             </button>
