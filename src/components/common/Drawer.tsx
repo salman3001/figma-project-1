@@ -97,13 +97,18 @@ function Drawer(prop: IDrawer) {
                   >
                     {prop.active === "promo" ? (
                       <img
-                        src="/images/promo-blue.svg"
+                        src={
+                          import.meta.env.VITE_BASE_URL +
+                          "/images/promo-blue.svg"
+                        }
                         className="bg-white rounded-lg p-1"
                         alt=""
                       />
                     ) : (
                       <img
-                        src="/images/promo.svg"
+                        src={
+                          import.meta.env.VITE_BASE_URL + "/images/promo.svg"
+                        }
                         className="bg-gray-400 rounded-lg p-1"
                         alt=""
                       />

@@ -115,6 +115,9 @@ const Welcome = () => {
         <Link to="/ordernowaddress2" className="btn btn-link">
           Order Now - Address2
         </Link>
+        <Link to="/ordernowservices" className="btn btn-link">
+          Order Now - Services
+        </Link>
       </ul>
     </div>
   );

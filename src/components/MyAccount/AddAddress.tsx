@@ -15,12 +15,12 @@ const AddAddress = () => {
               <h1 className="text-4xl font-bold">My Account</h1>
               <div className=" flex flex-col">
                 <div className="flex space-x-4 text-center text-white">
-                  <div className="bg-[#00A5BF]  p-4 py-2 w-40 rounded-t-lg ">
+                  <a className="bg-[#00A5BF]  p-4 py-2 w-40 rounded-t-lg cursor-pointer">
                     Address
-                  </div>
-                  <div className="  text-[#022A30] p-4 py-2 bg-[#afd1d7] bg-opacity-10 w-40 border-[#1ca3b8] border-opacity-25 border-x border-t  rounded-t-lg ">
+                  </a>
+                  <a className="  text-[#022A30] p-4 py-2 cursor-pointer bg-[#afd1d7] bg-opacity-10 w-40 border-[#1ca3b8] border-opacity-25 border-x border-t  rounded-t-lg ">
                     Profile
-                  </div>
+                  </a>
                 </div>
                 <div className="p-10 w-full min-h-[500px] bg-[#afd1d7] border-[#1ca3b8] border-opacity-25 border bg-opacity-10 rounded-sm">
                   <div className="max-w-xl flex flex-col gap-4 ">

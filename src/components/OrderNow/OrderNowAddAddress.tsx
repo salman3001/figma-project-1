@@ -13,27 +13,27 @@ const OrderNowAddAddress = () => {
           <>
             <DashboardNav title="Order Now" />
             <div className="w-full h-16 bg-[#03444F] mt-20 xl:mt-0 text-white flex items-center px-5 md:px-10 ">
-              <p className="opacity-70">
+              <p className="opacity-70 text-sm md:text-lg ">
                 There is high demand in your area, so please place your order
                 within 30 minutes.
               </p>
             </div>
             <div className="h-14 flex items-center px-2 md:px-10  ">
-              <div className="px-1 md:px-2 h-full flex flex-col justify-center bg-[#00A5BF] text-white">
+              <a className="px-1 text-sm md:text-lg  md:px-2 h-full flex flex-col justify-center cursor-pointer bg-[#00A5BF] text-white">
                 Address
-              </div>
-              <div className="px-1 md:px-2 h-full flex flex-col justify-center">
+              </a>
+              <a className="px-1 text-sm md:text-lg  md:px-2 h-full flex flex-col justify-center cursor-pointer">
                 Service
-              </div>
-              <div className="px-1 md:px-2 h-full flex flex-col justify-center">
+              </a>
+              <a className="px-1 text-sm md:text-lg  md:px-2 h-full flex flex-col justify-center cursor-pointer">
                 Collection
-              </div>
-              <div className="px-1 md:px-2 h-full flex flex-col justify-center">
+              </a>
+              <a className="px-1 text-sm md:text-lg  md:px-2 h-full flex flex-col justify-center cursor-pointer">
                 Contacts
-              </div>
-              <div className="px-1 md:px-2 h-full flex flex-col justify-center">
+              </a>
+              <a className="px-1 text-sm md:text-lg  md:px-2 h-full flex flex-col justify-center cursor-pointer">
                 Payment
-              </div>
+              </a>
             </div>
             {/* progress */}
             <div className="w-full h-1 bg-[#CBECF1]">

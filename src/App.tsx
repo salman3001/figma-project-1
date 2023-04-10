@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Aboutus from "./components/aboutus/Aboutus";
 import BlogDetail from "./components/blogdetail/BlogDetail";
@@ -37,6 +36,7 @@ import Signup2 from "./components/Registration&login/Signup2";
 import SuccessfullyChanged from "./components/Registration&login/SuccessfullyChanged";
 import SuccessfullyVarified from "./components/Registration&login/SuccessfullyVarified";
 import Welcome from "./components/Welcome";
+import OrderNowServices from "./components/OrderNow/OrderNowServices";
 
 function App() {
   return (
@@ -81,8 +81,10 @@ function App() {
         path="myaccountpasswordchanged"
         Component={MyAccountPasswordChanged}
       />
+      <Route path="ordernowaddress" Component={OrderNowAdress} />
       <Route path="ordernowaddaddress" Component={OrderNowAddAddress} />
       <Route path="ordernowaddress2" Component={OrderNowAddress2} />
+      <Route path="ordernowservices" Component={OrderNowServices} />
     </Routes>
   );
 }
