@@ -1,3 +1,4 @@
+import Accordian from "../Accordian";
 import Footer from "../footer/Footer";
 import Section10 from "../main/Section10";
 import Section8 from "../main/Section8";
@@ -10,7 +11,7 @@ const Faqs = () => {
         <NavBar />
       </header>
       <main className="grow">
-        <div className="grid lg:grid-cols-2 text-xl py-4 md:py-10 pl-10 pr-10 lg:pr-0 md:pl-20">
+        <div className="grid lg:grid-cols-2 text-xl py-4 md:py-10 p-10 md:p-20 ">
           <div className="flex flex-col gap-4">
             <h1 className="text-4xl md:text-7xl py-10 font-bold">
               Frequently asked questions
@@ -58,8 +59,32 @@ const Faqs = () => {
               </li>
             </ul>
           </div>
-          <div>
-            <Section8 />
+          <div className="flex  flex-col p-5 justify-center">
+            <Accordian
+              title="Where do you operate?"
+              summery="Yes, apart from dry cleaning and laundry services, we also offer alterations and repairs. You can check our services to know more. But kindly note these alteration and repairs require a minimum of 48 hours.z"
+            />
+            <div className="divider"></div>
+            <Accordian
+              title="Do you offer repair and alteration service too?"
+              summery="Yes, apart from dry cleaning and laundry services, we also offer alterations and repairs. You can check our services to know more. But kindly note these alteration and repairs require a minimum of 48 hours.z"
+            />
+            <div className="divider"></div>
+            <Accordian
+              title="How can I contact you?"
+              summery="Yes, apart from dry cleaning and laundry services, we also offer alterations and repairs. You can check our services to know more. But kindly note these alteration and repairs require a minimum of 48 hours.z"
+            />
+            <div className="divider"></div>
+            <Accordian
+              title="How can I contact you?"
+              summery="Yes, apart from dry cleaning and laundry services, we also offer alterations and repairs. You can check our services to know more. But kindly note these alteration and repairs require a minimum of 48 hours.z"
+            />
+            <div className="divider"></div>
+            <Accordian
+              title="How can I contact you?"
+              summery="Yes, apart from dry cleaning and laundry services, we also offer alterations and repairs. You can check our services to know more. But kindly note these alteration and repairs require a minimum of 48 hours.z"
+            />
+            <div className="divider"></div>
           </div>
         </div>
         <Section10 />

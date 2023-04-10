@@ -115,8 +115,32 @@ const Welcome = () => {
         <Link to="/ordernowaddress2" className="btn btn-link">
           Order Now - Address2
         </Link>
+        <Link to="/ordernowaddressselected" className="btn btn-link">
+          Order Now - Address Selected
+        </Link>
         <Link to="/ordernowservices" className="btn btn-link">
           Order Now - Services
+        </Link>
+        <Link to="/ordercollectiontime" className="btn btn-link">
+          Order collection time
+        </Link>
+        <Link to="/ordercollectiontimeselected" className="btn btn-link">
+          Order collection time selected
+        </Link>
+        <Link to="/contact" className="btn btn-link">
+          C ontact
+        </Link>
+        <Link to="/contactadddetail" className="btn btn-link">
+          Contact-add detail
+        </Link>
+        <Link to="/contactcompany" className="btn btn-link">
+          Contact-Company
+        </Link>
+        <Link to="/contactcompanyadddetail" className="btn btn-link">
+          Contact-Company-add-detail
+        </Link>
+        <Link to="/payment" className="btn btn-link">
+          Payment
         </Link>
       </ul>
     </div>

@@ -41,7 +41,7 @@ const Login = () => {
               <h1 className="text-3xl font-bold">Log in to Laundramoon</h1>
               <p className="opacity-70 text-xl">Log in to continue</p>
             </div>
-            <div className="w-full flex flex-col gap-4">
+            <form id="login-form" className="w-full flex flex-col gap-4">
               <div>
                 <Label titile="Email Address" for="email" />
                 <FormInput
@@ -53,14 +53,18 @@ const Login = () => {
               <div>
                 <Label titile="Password" for="password" />
                 <FormInput
-                  name="email"
+                  name="password"
                   placeholder="*********"
                   type="password"
                 />
               </div>
               <a href="/forgotpassword">Forgot Password?</a>
-            </div>
-            <button className="bg-[#00A5BF] w-full p-4 rounded-lg flex gap-2 text-white justify-center items-center text-xl">
+            </form>
+            <button
+              form="login-form"
+              type="submit"
+              className="bg-[#00A5BF] w-full p-4 rounded-lg flex gap-2 text-white justify-center items-center text-xl"
+            >
               <span>Login</span>{" "}
               <img
                 src={import.meta.env.VITE_BASE_URL + "/images/arrow.svg"}

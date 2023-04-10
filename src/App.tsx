@@ -14,9 +14,17 @@ import MyAccount2 from "./components/MyAccount/MyAccount2";
 import MyAccountChanePassword from "./components/MyAccount/MyAccountChanePassword";
 import MyAccountPasswordChanged from "./components/MyAccount/MyAccountPasswordChanged";
 import MyAccountProfile from "./components/MyAccount/MyAccountProfile";
+import Contact from "./components/OrderNow/Contact";
+import ContactAddDetail from "./components/OrderNow/ContactAddDetail";
+import ContactCompany from "./components/OrderNow/ContactCompany";
+import ContactCompanyAddDetail from "./components/OrderNow/ContactCompanyAddDetail";
+import OrderCollectionTime from "./components/OrderNow/OrderCollectionTime";
+import OrderCollectionTimeSelected from "./components/OrderNow/OrderCollectionTimeSelected";
 import OrderNowAddAddress from "./components/OrderNow/OrderNowAddAddress";
 import OrderNowAddress2 from "./components/OrderNow/OrderNowAddress2";
+import OrderNowAddressSelected from "./components/OrderNow/OrderNowAddressSelected";
 import OrderNowAdress from "./components/OrderNow/OrderNowAdress";
+import Payment from "./components/OrderNow/Payment";
 import Orders from "./components/Orders/Orders";
 import OrderTracking from "./components/Orders/OrderTracking";
 import OurServices from "./components/OurServices/OurServices";
@@ -84,7 +92,25 @@ function App() {
       <Route path="ordernowaddress" Component={OrderNowAdress} />
       <Route path="ordernowaddaddress" Component={OrderNowAddAddress} />
       <Route path="ordernowaddress2" Component={OrderNowAddress2} />
+      {/* update */}
+      <Route
+        path="ordernowaddressselected"
+        Component={OrderNowAddressSelected}
+      />
       <Route path="ordernowservices" Component={OrderNowServices} />
+      <Route path="ordercollectiontime" Component={OrderCollectionTime} />
+      <Route
+        path="ordercollectiontimeselected"
+        Component={OrderCollectionTimeSelected}
+      />
+      <Route path="contact" Component={Contact} />
+      <Route path="contactadddetail" Component={ContactAddDetail} />
+      <Route path="contactcompany" Component={ContactCompany} />
+      <Route
+        path="contactcompanyadddetail"
+        Component={ContactCompanyAddDetail}
+      />
+      <Route path="payment" Component={Payment} />
     </Routes>
   );
 }
